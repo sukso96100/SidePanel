@@ -4,6 +4,9 @@
     <string name="app_name">SidePanel</string>
     <string name="service_on">Service Enabled</string>
     <string name="service_off">Service Disabled</string>
-    <string name="button_appinfo">App info</string>
+    <string name="button_appinfo">Application Information</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_appinfo">Application Information</string>
 
 </resources>
