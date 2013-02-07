@@ -342,8 +342,10 @@ int string abs__share_action_provider_share_with 0x7f090006
 int string abs__shareactionprovider_share_with 0x7f090008
 int string abs__shareactionprovider_share_with_application 0x7f090009
 int string app_name 0x7f09000f
-int string hello_world 0x7f090010
-int string menu_settings 0x7f090011
+int string hello_world 0x7f090012
+int string menu_settings 0x7f090013
+int string service_off 0x7f090011
+int string service_on 0x7f090010
 int style AppBaseTheme 0x7f0a0059
 int style AppTheme 0x7f0a005a
 int style DialogWindowTitle_Sherlock 0x7f0a0036

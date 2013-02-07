@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SidePanel</string>
+    <string name="service_on">서비스 활성화됨</string>
+    <string name="service_off">서비스 비활성화됨</string>
+    <string name="button_appinfo">앱 정보</string>
+
+</resources>

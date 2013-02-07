@@ -20,7 +20,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="84dp"
-        android:text="ToggleButton" />
+        android:textOn="@string/service_on"
+        android:textOff="@string/service_off"/>
 
     <Button
         android:id="@+id/button1"
@@ -30,6 +31,6 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="33dp"
-        android:text="Button" />
+        android:text="@string/button_appinfo" />
 
 </RelativeLayout>
