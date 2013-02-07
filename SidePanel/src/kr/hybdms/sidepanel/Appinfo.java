@@ -6,18 +6,15 @@ import com.actionbarsherlock.app.SherlockActivity;
 
 import android.net.Uri;
 import android.os.Bundle;
-import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Resources;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-import android.support.v4.app.NavUtils;
 
-public class Appinfo extends SherlockActivity {
+public class Appinfo extends SherlockActivity implements OnItemClickListener {
 	 private ListView mListView;
 	 private ArrayList<String> mArrayList;
 	 private ArrayAdapter<String> mArrayAdpter;
@@ -35,6 +32,7 @@ public class Appinfo extends SherlockActivity {
 	              android.R.layout.simple_list_item_1, mArrayList);
 	        
 	        mListView.setAdapter(mArrayAdpter);//List에 adapter등록
+	        mListView.setOnItemClickListener(itemClickListenerOfLanguageList);
 	    }
 	 @Override
 	 protected void onResume() {
@@ -50,7 +48,12 @@ public class Appinfo extends SherlockActivity {
 		  
 
 		 }
-	 public void onItemClick(AdapterView<?> arg0, View arg1, int position, long id) {
+	 private OnItemClickListener itemClickListenerOfLanguageList = new OnItemClickListener()
+	    {
+	        public void onItemClick(AdapterView<?> adapterView, View clickedView, int position, long id)
+	        {
+
+
 			// TODO Auto-generated method stub
 	  
 	  if(position == 1){
@@ -69,4 +72,11 @@ public class Appinfo extends SherlockActivity {
 	  
 
  }
+};
+
+	@Override
+	public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
+		// TODO Auto-generated method stub
+		
+	}
 }
