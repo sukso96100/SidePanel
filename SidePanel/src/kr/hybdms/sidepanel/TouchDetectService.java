@@ -22,7 +22,11 @@ public class TouchDetectService extends Service {
 	    @Override public boolean onTouch(View v, MotionEvent event) {
 	        switch(event.getAction()) {
 
-	            case MotionEvent.ACTION_MOVE:
+	            case MotionEvent.ACTION_DOWN:
+	            	
+	            	Intent lsp = new Intent(getBaseContext(), LeftSidePanel.class);
+	            	lsp.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+	            	getApplication().startActivity(lsp);
 	                break;
 	        }
 	        
@@ -40,7 +44,7 @@ public class TouchDetectService extends Service {
        
 
             mTouchDetector = new ImageView(this);                                         //뷰 생성
-            mTouchDetector.setImageResource(R.drawable.ic_launcher);
+            mTouchDetector.setImageResource(R.drawable.detector);
             mTouchDetector.setOnTouchListener(mViewTouchListener);              //팝업뷰에 터치 리스너 등록
             //최상위 윈도우에 넣기 위한 설정
             mParams = new WindowManager.LayoutParams(
