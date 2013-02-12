@@ -35,4 +35,7 @@
         <item name="buttonBarButtonStyle">@style/ButtonBarButton</item>
     </style>
 
+    <style name="styleName">
+        <item name="android:scaleType">fitXY</item>
+    </style>
 </resources>

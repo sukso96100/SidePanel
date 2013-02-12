@@ -1,6 +1,5 @@
 package kr.hybdms.sidepanel;
 
-import com.actionbarsherlock.app.SherlockActivity;
 
 import kr.hybdms.sidepanel.util.SystemUiHider;
 
