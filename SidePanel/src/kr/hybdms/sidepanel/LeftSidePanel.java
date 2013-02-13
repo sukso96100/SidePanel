@@ -3,12 +3,25 @@ package kr.hybdms.sidepanel;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+
+import kr.hybdms.sidepanel.PanelArrayAdapter;
+import kr.hybdms.sidepanel.R;
+import kr.hybdms.sidepanel.Utilities;
 
 import kr.hybdms.sidepanel.util.SystemUiHider;
 
 import android.annotation.TargetApi;
 import android.app.Activity;
+import android.app.ActivityManager;
+import android.app.ActivityManager.RunningTaskInfo;
+import android.content.ComponentName;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ApplicationInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.PackageManager.NameNotFoundException;
+import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -29,42 +42,31 @@ import android.widget.ToggleButton;
  * 
  * @see SystemUiHider
  */
-public class LeftSidePanel extends Activity implements
-OnItemClickListener {
-	 
-public static final String[] titles = new String[] { "SidePanel"};
-
-public static final Integer[] images = { R.drawable.ic_launcher};
-
-ListView listView;
-List<PanelRowItem> rowItems;
-
-/** Called when the activity is first created. */
-@Override
-public void onCreate(Bundle savedInstanceState) {
-super.onCreate(savedInstanceState);
-setContentView(R.layout.activity_left_side_panel);
-
-rowItems = new ArrayList<PanelRowItem>();
-for (int i = 0; i < titles.length; i++) {
-    PanelRowItem item = new PanelRowItem(images[i], titles[i]);
-    rowItems.add(item);
-}
-
-listView = (ListView) findViewById(R.id.panelcontents);
-PanelArrayAdapter adapter = new PanelArrayAdapter(this,
-        R.layout.panelrow, rowItems);
-listView.setAdapter(adapter);
-listView.setOnItemClickListener(this);
-}
-
-@Override
-public void onItemClick(AdapterView<?> parent, View view, int position,
-    long id) {
-Toast toast = Toast.makeText(getApplicationContext(),
-    "Item " + (position + 1) + ": " + rowItems.get(position),
-    Toast.LENGTH_SHORT);
-toast.setGravity(Gravity.BOTTOM|Gravity.CENTER_HORIZONTAL, 0, 0);
-toast.show();
-}
+public class LeftSidePanel extends Activity {
+    private ListView mListAppInfo;
+	
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        // set layout for the main screen
+        setContentView(R.layout.activity_left_side_panel);        
+        // load list application
+        mListAppInfo = (ListView)findViewById(R.id.panelcontents);
+        // create new adapter
+        PanelArrayAdapter adapter = new PanelArrayAdapter(this, Utilities.getInstalledApplication(this), getPackageManager());
+        // set adapter to list view
+        mListAppInfo.setAdapter(adapter);
+        // implement event when an item on list view is selected
+        mListAppInfo.setOnItemClickListener(new OnItemClickListener() {
+        	@Override
+        	public void onItemClick(AdapterView<?> parent, View view, int pos, long id) {
+        		// get the list adapter
+        		PanelArrayAdapter appInfoAdapter = (PanelArrayAdapter)parent.getAdapter();
+        		// get selected item on the list
+        		ApplicationInfo appInfo = (ApplicationInfo)appInfoAdapter.getItem(pos);
+        		// launch the selected application
+        		Utilities.launchApp(parent.getContext(), getPackageManager(), appInfo.packageName);
+        	}
+		});
+    }
 }

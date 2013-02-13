@@ -18,7 +18,6 @@
     android:layout_height="40dp"
     android:layout_alignParentTop="true"
     android:layout_centerHorizontal="true"
-    android:layout_margin="10dp"
-    android:background="#E44044" />
+    android:layout_margin="10dp"/>
 
     </RelativeLayout>
