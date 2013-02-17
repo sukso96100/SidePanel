@@ -2,72 +2,38 @@ package kr.hybdms.sidepanel;
 
 import java.util.List;
 
+import android.app.Activity;
 import android.content.Context;
-import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.View.OnClickListener;
-import android.widget.AdapterView;
-import android.widget.BaseAdapter;
+import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.AdapterView.OnItemClickListener;
 
-public class PanelArrayAdapter extends BaseAdapter {
-	private Context mContext;
-	private List<ApplicationInfo> mListAppInfo;
-	private PackageManager mPackManager;
-	
-	public PanelArrayAdapter(Context c, List<ApplicationInfo> list, PackageManager pm) {
-		mContext = c;
-		mListAppInfo = list;
-		mPackManager = pm;
-	}
-
-	@Override
-	public int getCount() {
-		return mListAppInfo.size();
-	}
-
-	@Override
-	public Object getItem(int position) {
-		return mListAppInfo.get(position);
-	}
-
-	@Override
-	public long getItemId(int position) {
-		return position;
-	}
-
-	@Override
-	public View getView(int position, View convertView, ViewGroup parent) {
-		// get the selected entry
-		ApplicationInfo entry = mListAppInfo.get(position);
-		
-		// reference to convertView
-		View v = convertView;
-		
-		// inflate new layout if null
-		if(v == null) {
-			LayoutInflater inflater = LayoutInflater.from(mContext);
-			v = inflater.inflate(R.layout.panelrow, null);
-		}
-		
-		// load controls from layout resources
-		ImageView ivAppIcon = (ImageView)v.findViewById(R.id.appicon);
-		TextView tvAppName = (TextView)v.findViewById(R.id.appnametext);
-		
-		// set data to display
-		ivAppIcon.setImageDrawable(entry.loadIcon(mPackManager));
-		tvAppName.setText(entry.loadLabel(mPackManager));
-		
-		// return view
-		return v;
-	}
-
-	
-	
-
+public class PanelArrayAdapter extends ArrayAdapter<PanelItemDetail> {
+    Context context;
+    public PanelArrayAdapter(Context context, int resourceId,
+            List<PanelItemDetail> items) {
+        super(context, resourceId, items);
+        this.context = context;
+    }
+    /*private view holder class*/
+    private class ViewHolder {
+        ImageView imageView;
+    }
+    public View getView(int position, View convertView, ViewGroup parent) {
+        ViewHolder holder = null;
+        PanelItemDetail rowItem = getItem(position);
+        LayoutInflater mInflater = (LayoutInflater) context
+                .getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
+        if (convertView == null) {
+            convertView = mInflater.inflate(R.layout.panelrow, null);
+            holder = new ViewHolder();
+            holder.imageView = (ImageView) convertView.findViewById(R.id.appicon);
+            convertView.setTag(holder);
+        } else
+            holder = (ViewHolder) convertView.getTag();
+        holder.imageView.setImageDrawable(rowItem.getImageId());
+        return convertView;
+    }
 }

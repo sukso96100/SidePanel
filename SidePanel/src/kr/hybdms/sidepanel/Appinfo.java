@@ -18,19 +18,15 @@ public class Appinfo extends SherlockActivity implements OnItemClickListener {
 	 private ListView mListView;
 	 private ArrayList<String> mArrayList;
 	 private ArrayAdapter<String> mArrayAdpter;
-	 
 	    @Override
 	    public void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
-	        setContentView(R.layout.activity_appinfo);
-	       
-	        mListView = (ListView)findViewById(R.id.listView1); //ListView 가져오기
-	        
+	        setContentView(R.layout.activity_appinfo);       
+	        mListView = (ListView)findViewById(R.id.listView1); //ListView 가져오기	        
 	        mArrayList = new ArrayList<String>(); //List 저장할 array
 	        //Adapter 생성
 	        mArrayAdpter = new ArrayAdapter<String>(this, 
 	              android.R.layout.simple_list_item_1, mArrayList);
-	        
 	        mListView.setAdapter(mArrayAdpter);//List에 adapter등록
 	        mListView.setOnItemClickListener(itemClickListenerOfLanguageList);
 	    }
@@ -38,22 +34,16 @@ public class Appinfo extends SherlockActivity implements OnItemClickListener {
 	 protected void onResume() {
 		  // TODO Auto-generated method stub
 		  super.onResume();
-		  
 		  Resources res = getResources();
 		  String[] menuString = res.getStringArray(R.array.appinfo_array);
-		  
 		  for(String s: menuString){
 		   mArrayList.add(s);
 		  }
-		  
-
 		 }
 	 private OnItemClickListener itemClickListenerOfLanguageList = new OnItemClickListener()
 	    {
 	        public void onItemClick(AdapterView<?> adapterView, View clickedView, int position, long id)
 	        {
-
-
 			// TODO Auto-generated method stub
 	  
 	  if(position == 1){
@@ -61,16 +51,11 @@ public class Appinfo extends SherlockActivity implements OnItemClickListener {
      intent.setData(Uri.parse("http://play.google.com"));
      startActivity(intent);
 	  }
-	  
 	  else if(position == 2){
 	  Intent intent1 = new Intent(Intent.ACTION_VIEW);
 	   intent1.setData(Uri.parse("https://hybdms.blogspot.com"));
 	  startActivity(intent1);
 	  }
-	  
-
-	  
-
  }
 };
 
