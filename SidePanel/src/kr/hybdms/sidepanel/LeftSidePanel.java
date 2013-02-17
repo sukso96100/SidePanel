@@ -47,13 +47,12 @@ setContentView(R.layout.activity_left_side_panel);
 
 ActivityManager am = (ActivityManager) this.getSystemService(ACTIVITY_SERVICE);
 List<ActivityManager.RunningTaskInfo> tasks = am.getRunningTasks(100);
-List <Drawable> applicationDrawables = new ArrayList <Drawable>();
+List<PanelItemDetail> iconarray = new ArrayList<PanelItemDetail>();
 PackageManager pacMgr = getPackageManager();
-rowItems = new ArrayList<PanelItemDetail>();
   for (ActivityManager.RunningTaskInfo runningTask: tasks)
   {
     try {
-      applicationDrawables.add (pacMgr.getApplicationIcon(runningTask.topActivity.getPackageName()));
+    	iconarray.add(new PanelItemDetail(pacMgr.getApplicationIcon(runningTask.topActivity.getPackageName())));
     } catch (NameNotFoundException e) {
       e.printStackTrace();
     }
