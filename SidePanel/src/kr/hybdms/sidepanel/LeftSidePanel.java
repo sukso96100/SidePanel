@@ -2,7 +2,6 @@ package kr.hybdms.sidepanel;
 
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
 
 
@@ -14,12 +13,9 @@ import kr.hybdms.sidepanel.util.SystemUiHider;
 
 import android.app.Activity;
 import android.app.ActivityManager;
-import android.content.pm.ApplicationInfo;
-import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.View;
@@ -27,7 +23,6 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ListView;
 import android.widget.Toast;
-import android.content.Context;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -45,14 +40,15 @@ public void onCreate(Bundle savedInstanceState) {
 super.onCreate(savedInstanceState);
 setContentView(R.layout.activity_left_side_panel);
 
+listView = (ListView) findViewById(R.id.panelcontents);
 ActivityManager am = (ActivityManager) this.getSystemService(ACTIVITY_SERVICE);
-List<ActivityManager.RunningTaskInfo> tasks = am.getRunningTasks(100);
-List<PanelItemDetail> iconarray = new ArrayList<PanelItemDetail>();
+List<ActivityManager.RunningTaskInfo> tasks = am.getRunningTasks(30);
+rowItems = new ArrayList<PanelItemDetail>();
 PackageManager pacMgr = getPackageManager();
   for (ActivityManager.RunningTaskInfo runningTask: tasks)
   {
     try {
-    	iconarray.add(new PanelItemDetail(pacMgr.getApplicationIcon(runningTask.topActivity.getPackageName())));
+    	rowItems.add(new PanelItemDetail(pacMgr.getApplicationIcon(runningTask.topActivity.getPackageName())));
     } catch (NameNotFoundException e) {
       e.printStackTrace();
     }
