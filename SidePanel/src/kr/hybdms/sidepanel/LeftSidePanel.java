@@ -71,7 +71,8 @@ public class LeftSidePanel extends Activity {
 	  listView.setAdapter(adapter);
 	  listView.setOnItemClickListener(new OnItemClickListener() {
 	   public void onItemClick(AdapterView<?> parent, View view, int postion, long id) {
-	       startActivity(new Intent().setClassName(packageName.get(postion).toString(), className.get(postion).toString()).addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT));
+		   Intent taskintent = getPackageManager().getLaunchIntentForPackage(packageName.get(postion).toString());
+	       startActivity(taskintent);
 	       finish();
 	   } 
 	  });
