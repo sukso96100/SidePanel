@@ -47,6 +47,9 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_left_side_panel"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+             <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

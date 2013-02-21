@@ -30,8 +30,9 @@
         android:layout_alignParentLeft="true"
         android:layout_alignRight="@+id/panelbackground"
         android:layout_centerVertical="true"
-        android:listSelector="@drawable/panel_item_bg"
-        android:divider="#000000" >
+        android:divider="#00000000"
+        android:dividerHeight="20dp"
+        android:listSelector="@drawable/panel_item_bg" >
 
     </ListView>
     
