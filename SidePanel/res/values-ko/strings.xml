@@ -15,6 +15,7 @@
         <item>E-Mail 로 피드백 보내기</item>
         <item>제 3자 고지사항</item>
     </string-array>
+<string name="title_activity_notices">제 3자 고지사항</string>
 
 
 </resources>

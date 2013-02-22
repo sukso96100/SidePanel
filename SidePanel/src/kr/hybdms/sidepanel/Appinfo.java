@@ -68,7 +68,7 @@ public class Appinfo extends SherlockActivity implements OnItemClickListener {
      intent.setData(Uri.parse("http://play.google.com"));
      startActivity(intent);
 	  }
-	  else if(position == 4){
+	  else if(position == 2){
 	  Intent it2 = new Intent(Intent.ACTION_VIEW);
   	it2.setData(Uri.parse("http://hybdms.blogspot.com"));
   	startActivity(it2);
