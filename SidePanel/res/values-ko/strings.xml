@@ -8,7 +8,7 @@
     <string name="title_activity_appinfo">애플리케이션 정보</string>
 
 <string-array name="appinfo_array">
-        <item>앱 버전 : 0.1 alpha</item>
+        <item>앱 버전 : 0.1(beta)</item>
         <item>Google Play 에서 업데이트 확인</item>
         <item>블로그 방문(hybdms.blogspot.com)</item>
         <item>앱 사용 도움말</item>
