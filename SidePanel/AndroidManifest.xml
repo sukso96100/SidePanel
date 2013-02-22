@@ -47,9 +47,17 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_left_side_panel"
             android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
-             <intent-filter>
+            <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="kr.hybdms.sidepanel.Notices"
+            android:label="@string/title_activity_notices"
+            android:parentActivityName="kr.hybdms.sidepanel.Appinfo" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kr.hybdms.sidepanel.Appinfo" />
         </activity>
     </application>
 

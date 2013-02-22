@@ -1,3 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <!-- Copyright 2013 Young Bin Han
 
      Licensed under the Apache License, Version 2.0 (the "License");
@@ -12,9 +14,26 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<set xmlns:android="http://schemas.android.com/apk/res/android"
-         android:shareInterpolator="false">
-        <translate android:fromXDelta="-100%" android:toXDelta="0%"
-          android:fromYDelta="0%" android:toYDelta="0%"
-         android:duration="700"/>
-       </set>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+    
+<ScrollView
+ android:id="@+id/scrollView"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content">     
+    
+<TextView  
+ android:id="@+id/notices"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:textSize="18dp"
+    />
+
+</ScrollView>
+
+</LinearLayout>
