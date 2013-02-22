@@ -19,7 +19,6 @@
     tools:context=".LeftSidePanel" >
 
     <ImageView android:id="@+id/transparentbackground"
-        android:src="@drawable/detector"
         android:adjustViewBounds="true"
         android:gravity="center_vertical"
         android:scaleType="fitXY"
@@ -49,5 +48,10 @@
         android:listSelector="@drawable/panel_item_bg" >
 
     </ListView>
+    
+    	<ImageView
+		android:id="@+id/animation"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
     
 </RelativeLayout>

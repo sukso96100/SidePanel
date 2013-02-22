@@ -25,7 +25,6 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ToggleButton;
-import android.view.View.OnClickListener;
 
 
 public class MainActivity extends SherlockActivity implements OnClickListener {

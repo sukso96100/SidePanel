@@ -56,6 +56,7 @@ public class LeftSidePanel extends Activity {
 	 
 	 protected void onCreate(Bundle savedInstanceState) {
 	  super.onCreate(savedInstanceState);
+	  overridePendingTransition(R.anim.left_to_right, R.anim.right_to_left);
 	  setContentView(R.layout.activity_left_side_panel);
 	  
 	  ImageView imgbtn = (ImageView) findViewById(R.id.transparentbackground);
@@ -101,7 +102,6 @@ public class LeftSidePanel extends Activity {
 				 }
 			 } 
 		  });
-	  
-	  
 	 }
+	 
 }
