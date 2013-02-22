@@ -8,7 +8,7 @@
     <string name="title_activity_appinfo">Application Information</string>
 
     <string-array name="appinfo_array">
-        <item>App Version : 0.2(beta)</item>
+        <item>App Version : 0.1(beta)</item>
         <item>Check for updates on Google Play</item>
         <item>Visit Blog(hybdms.blogspot.com)</item>
         <item>Using Guide</item>
