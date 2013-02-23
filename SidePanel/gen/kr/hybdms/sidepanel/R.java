@@ -9,8 +9,10 @@ package kr.hybdms.sidepanel;
 
 public final class R {
     public static final class anim {
-        public static final int left_to_right=0x7f040000;
-        public static final int right_to_left=0x7f040001;
+        public static final int right_slide_in=0x7f040000;
+        public static final int right_slide_out=0x7f040001;
+        public static final int zoom_in=0x7f040002;
+        public static final int zoom_out=0x7f040003;
     }
     public static final class array {
         public static final int appinfo_array=0x7f0d0000;
@@ -1052,61 +1054,75 @@ containing a value of this type.
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
+ Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
          */
         public static final int abs__action_bar_home_description=0x7f0b0000;
         /**  Content description for the action bar "up" affordance. [CHAR LIMIT=NONE] 
+ Content description for the action bar "up" affordance. [CHAR LIMIT=NONE] 
          */
         public static final int abs__action_bar_up_description=0x7f0b0001;
         /**  Content description for the action menu overflow button. [CHAR LIMIT=NONE] 
+ Content description for the action menu overflow button. [CHAR LIMIT=NONE] 
          */
         public static final int abs__action_menu_overflow_description=0x7f0b0002;
         /**  Label for the "Done" button on the far left of action mode toolbars. 
+ Label for the "Done" button on the far left of action mode toolbars. 
          */
         public static final int abs__action_mode_done=0x7f0b0003;
         /**  Title default for a dialog showing possible activities in ActivityChooserView [CHAR LIMIT=25] 
+ Title default for a dialog showing possible activities in ActivityChooserView [CHAR LIMIT=25] 
          */
         public static final int abs__activity_chooser_view_dialog_title_default=0x7f0b0005;
         /**  Title for a button to expand the list of activities in ActivityChooserView [CHAR LIMIT=25] 
+ Title for a button to expand the list of activities in ActivityChooserView [CHAR LIMIT=25] 
          */
         public static final int abs__activity_chooser_view_see_all=0x7f0b0004;
         /**  Description of the shwoing of a popup window with activities to choose from. [CHAR LIMIT=NONE] 
+ Description of the shwoing of a popup window with activities to choose from. [CHAR LIMIT=NONE] 
          */
         public static final int abs__activitychooserview_choose_application=0x7f0b0007;
         /**  SearchView accessibility description for clear button [CHAR LIMIT=NONE] 
+ SearchView accessibility description for clear button [CHAR LIMIT=NONE] 
          */
         public static final int abs__searchview_description_clear=0x7f0b000c;
         /**  SearchView accessibility description for search text field [CHAR LIMIT=NONE] 
+ SearchView accessibility description for search text field [CHAR LIMIT=NONE] 
          */
         public static final int abs__searchview_description_query=0x7f0b000b;
         /**  SearchView accessibility description for search button [CHAR LIMIT=NONE] 
+ SearchView accessibility description for search button [CHAR LIMIT=NONE] 
          */
         public static final int abs__searchview_description_search=0x7f0b000a;
         /**  SearchView accessibility description for submit button [CHAR LIMIT=NONE] 
+ SearchView accessibility description for submit button [CHAR LIMIT=NONE] 
          */
         public static final int abs__searchview_description_submit=0x7f0b000d;
         /**  SearchView accessibility description for voice button [CHAR LIMIT=NONE] 
+ SearchView accessibility description for voice button [CHAR LIMIT=NONE] 
          */
         public static final int abs__searchview_description_voice=0x7f0b000e;
         /**  Title for a dialog showing possible activities for sharing in ShareActionProvider [CHAR LIMIT=25] 
+ Title for a dialog showing possible activities for sharing in ShareActionProvider [CHAR LIMIT=25] 
          */
         public static final int abs__share_action_provider_share_with=0x7f0b0006;
         /**  Description of the choose target button in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
+ Description of the choose target button in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
          */
         public static final int abs__shareactionprovider_share_with=0x7f0b0008;
         /**  Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
+ Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
          */
         public static final int abs__shareactionprovider_share_with_application=0x7f0b0009;
         public static final int app_name=0x7f0b000f;
         public static final int button_appinfo=0x7f0b0012;
-        public static final int dummy_button=0x7f0b0017;
-        public static final int dummy_content=0x7f0b0016;
-        public static final int hello_world=0x7f0b0013;
-        public static final int menu_settings=0x7f0b0014;
+        public static final int dummy_button=0x7f0b0015;
+        public static final int dummy_content=0x7f0b0014;
+        public static final int menu_settings=0x7f0b0018;
         public static final int service_off=0x7f0b0011;
         public static final int service_on=0x7f0b0010;
-        public static final int title_activity_appinfo=0x7f0b0015;
-        public static final int title_activity_left_side_panel=0x7f0b0018;
-        public static final int title_activity_notices=0x7f0b0019;
+        public static final int title_activity_appinfo=0x7f0b0013;
+        public static final int title_activity_left_side_panel=0x7f0b0016;
+        public static final int title_activity_notices=0x7f0b0017;
     }
     public static final class style {
         /** 

@@ -20,5 +20,6 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="title_activity_left_side_panel">LeftSidePanel</string>
     <string name="title_activity_notices">Third-Party Notices</string>
+    <string name="menu_settings"/>
 
 </resources>

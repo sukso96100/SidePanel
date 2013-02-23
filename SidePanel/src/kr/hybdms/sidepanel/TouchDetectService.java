@@ -39,7 +39,7 @@ public class TouchDetectService extends Service {
 	    @Override public boolean onTouch(View v, MotionEvent event) {
 	        switch(event.getAction()) {
 
-	            case MotionEvent.ACTION_DOWN:
+	            case MotionEvent.ACTION_MOVE:
 	            	
 	            	Intent lsp = new Intent(getBaseContext(), LeftSidePanel.class);
 	            	lsp.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

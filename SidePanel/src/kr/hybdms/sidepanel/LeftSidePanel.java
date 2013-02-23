@@ -56,7 +56,7 @@ public class LeftSidePanel extends Activity {
 	 
 	 protected void onCreate(Bundle savedInstanceState) {
 	  super.onCreate(savedInstanceState);
-	  overridePendingTransition(R.anim.left_to_right, R.anim.right_to_left);
+	  overridePendingTransition(R.anim.right_slide_in, 0);
 	  setContentView(R.layout.activity_left_side_panel);
 	  
 	  ImageView imgbtn = (ImageView) findViewById(R.id.transparentbackground);
@@ -91,6 +91,7 @@ public class LeftSidePanel extends Activity {
 	   public void onItemClick(AdapterView<?> parent, View view, int postion, long id) {
 		   Intent taskintent = getPackageManager().getLaunchIntentForPackage(packageName.get(postion).toString());
 	       startActivity(taskintent);
+	       overridePendingTransition(R.anim.right_slide_out, R.anim.zoom_in);
 	       finish();
 	   } 
 	  });
