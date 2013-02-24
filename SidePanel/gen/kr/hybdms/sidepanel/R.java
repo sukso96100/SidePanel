@@ -10,9 +10,11 @@ package kr.hybdms.sidepanel;
 public final class R {
     public static final class anim {
         public static final int right_slide_in=0x7f040000;
-        public static final int right_slide_out=0x7f040001;
-        public static final int zoom_in=0x7f040002;
-        public static final int zoom_out=0x7f040003;
+        public static final int right_slide_in_fast=0x7f040001;
+        public static final int right_slide_out=0x7f040002;
+        public static final int right_slide_out_fast=0x7f040003;
+        public static final int zoom_in=0x7f040004;
+        public static final int zoom_out=0x7f040005;
     }
     public static final class array {
         public static final int appinfo_array=0x7f0e0000;
