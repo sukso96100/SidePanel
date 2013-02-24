@@ -6,8 +6,18 @@
     <string name="service_off">서비스 비활성화됨</string>
     <string name="button_appinfo">애플리케이션 정보</string>
     <string name="title_activity_appinfo">애플리케이션 정보</string>
+    <string name="title_activity_notices">제 3자 고지사항</string>
+    <string name="title_activity_left_side_panel">좌측 패널</string>
+    <string name="dummy_content">더미컨텐츠</string>
+    <string name="dummy_button">더미버튼</string>
+    <string name="menu_settings"/>
+    <string name="pref_service_toggle">서비스 활성화하기</string>
+    <string name="pref_service_toggle_sub">체크하여 SidePanel 서비스를 활성화합니다</string>
+    <string name="label_settings">설정</string>
+    <string name="label_sum_settings">SidePanel 설정 변경</string>
+    <string name="action_settings"></string>
 
-<string-array name="appinfo_array">
+    <string-array name="appinfo_array">
         <item>앱 버전 : 0.2(beta)</item>
         <item>Google Play 에서 업데이트 확인</item>
         <item>블로그 방문(hybdms.blogspot.com)</item>
@@ -15,11 +25,24 @@
         <item>E-Mail 로 피드백 보내기</item>
         <item>제 3자 고지사항</item>
     </string-array>
-<string name="title_activity_notices">제 3자 고지사항</string>
-<string name="title_activity_left_side_panel">좌측 패널</string>
-<string name="dummy_content">더미컨텐츠</string>
-<string name="dummy_button">더미버튼</string>
-<string name="menu_settings"/>
+    
+    <string-array name="home_item_array">
+        <item>앱 설정</item>
+        <item>앱 사용 도움말</item>
+        <item>Google Play에서 업데이트 확인</item>
+        <item>블로그 방문(hybdms.blogspot.kr)</item>
+        <item>SidePanel 정보</item>
+    </string-array>
+    <string name="pref_auto">부팅시 서비스 자동시작</string>
+    <string name="pref_auto_sub">부팅시 서비스를 자동으로 시작하려면 체크하세요</string>
+    <string name="pref_guide">이용 도움말</string>
+    <string name="pref_guide_sub">SidePanel 이용 도움말</string>
+    <string name="pref_blog">블로그 방문</string>
+    <string name="pref_blog_sub">hybdms.blogspot.com</string>
+    <string name="pref_appinfo">애플리케이션 정보</string>
+    <string name="pref_appinfo_sub">SidePanel에 대한 몇몇 정보들</string>
+
+
 
 
 </resources>
