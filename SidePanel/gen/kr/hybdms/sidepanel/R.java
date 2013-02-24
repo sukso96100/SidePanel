@@ -1043,13 +1043,12 @@ containing a value of this type.
         public static final int abs__search_view=0x7f030015;
         public static final int abs__simple_dropdown_hint=0x7f030016;
         public static final int activity_appinfo=0x7f030017;
-        public static final int activity_home=0x7f030018;
-        public static final int activity_left_side_panel=0x7f030019;
-        public static final int activity_notices=0x7f03001a;
-        public static final int listrow=0x7f03001b;
-        public static final int panelrow=0x7f03001c;
-        public static final int sherlock_spinner_dropdown_item=0x7f03001d;
-        public static final int sherlock_spinner_item=0x7f03001e;
+        public static final int activity_left_side_panel=0x7f030018;
+        public static final int activity_notices=0x7f030019;
+        public static final int listrow=0x7f03001a;
+        public static final int panelrow=0x7f03001b;
+        public static final int sherlock_spinner_dropdown_item=0x7f03001c;
+        public static final int sherlock_spinner_item=0x7f03001d;
     }
     public static final class menu {
         public static final int activity_appinfo=0x7f0f0000;

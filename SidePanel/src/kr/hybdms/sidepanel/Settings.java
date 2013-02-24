@@ -1,15 +1,19 @@
 package kr.hybdms.sidepanel;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.Bundle;
+import android.preference.CheckBoxPreference;
 import android.preference.Preference;
+import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.Preference.OnPreferenceClickListener;
+import android.preference.PreferenceManager;
 
 import com.actionbarsherlock.app.SherlockPreferenceActivity;
 import kr.hybdms.sidepanel.R;
 
-public class Settings extends SherlockPreferenceActivity implements OnPreferenceClickListener{
+public class Settings extends SherlockPreferenceActivity implements OnPreferenceClickListener, OnPreferenceChangeListener{
 
 	  @SuppressWarnings("deprecation")
 	  @Override
@@ -17,7 +21,22 @@ public class Settings extends SherlockPreferenceActivity implements OnPreference
 	    super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.settings);
         
- 
+        CheckBoxPreference checkboxPref = (CheckBoxPreference)getPreferenceManager().findPreference("service_toggle");
+
+        checkboxPref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {            
+
+        public boolean onPreferenceChange(Preference preference, Object newValue) {
+
+               boolean myValue = (Boolean) newValue;
+
+               if(myValue)
+                       startService(new Intent(Settings.this, TouchDetectService.class));
+               else
+                       stopService(new Intent(Settings.this, TouchDetectService.class));
+
+              return true;
+         }
+     }); 
         
         Preference pAppName = (Preference)findPreference("blog_intent");
         Preference pAppVersion = (Preference)findPreference("appinfo_intent");
@@ -44,5 +63,13 @@ public class Settings extends SherlockPreferenceActivity implements OnPreference
         }
         return false;
     }
+
+	@Override
+	public boolean onPreferenceChange(Preference preference, Object newValue) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+    
+    
     
 }
