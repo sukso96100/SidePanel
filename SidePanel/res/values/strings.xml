@@ -16,23 +16,6 @@
     <string name="label_settings">Settings</string>
     <string name="label_sum_settings">Change SidePanel Settings</string>
     <string name="action_settings"></string>
-
-    <string-array name="appinfo_array">
-        <item>App Version : 0.3(beta)</item>
-        <item>Check for updates on Google Play</item>
-        <item>Visit Blog(hybdms.blogspot.com)</item>
-        <item>Using Guide</item>
-        <item>Send Feedback via E-Mail</item>
-        <item>Third-Party Notices</item>
-    </string-array>
-    
-    <string-array name="home_item_array">
-        <item>App Settings</item>
-        <item>App using guide</item>
-        <item>Check for updates on Google Play</item>
-        <item>Visit the blog(hybdms.blogspot.com)</item>
-        <item>About SidePanel</item>
-    </string-array>
     <string name="pref_auto">Start on boot</string>
     <string name="pref_auto_sub">Check to start service on boot</string>
     <string name="pref_guide">Using Guide</string>
@@ -41,6 +24,9 @@
     <string name="pref_blog_sub">hybdms.blogspot.com</string>
     <string name="pref_appinfo">About this app</string>
     <string name="pref_appinfo_sub">Some information about SidePanel</string>
+    <string name="info_updatecheck">Check for updates</string>
+    <string name="info_feedback">Send feedback</string>
+    <string name="info_thirdparty">Third-Party notices</string>
     
     
 

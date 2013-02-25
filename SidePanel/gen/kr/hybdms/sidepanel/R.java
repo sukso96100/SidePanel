@@ -9,16 +9,16 @@ package kr.hybdms.sidepanel;
 
 public final class R {
     public static final class anim {
-        public static final int right_slide_in=0x7f040000;
-        public static final int right_slide_in_fast=0x7f040001;
-        public static final int right_slide_out=0x7f040002;
-        public static final int right_slide_out_fast=0x7f040003;
-        public static final int zoom_in=0x7f040004;
-        public static final int zoom_out=0x7f040005;
-    }
-    public static final class array {
-        public static final int appinfo_array=0x7f0e0000;
-        public static final int home_item_array=0x7f0e0001;
+        public static final int left_slide_in=0x7f040000;
+        public static final int left_slide_in_fast=0x7f040001;
+        public static final int left_slide_out=0x7f040002;
+        public static final int left_slide_out_fast=0x7f040003;
+        public static final int right_slide_in=0x7f040004;
+        public static final int right_slide_in_fast=0x7f040005;
+        public static final int right_slide_out=0x7f040006;
+        public static final int right_slide_out_fast=0x7f040007;
+        public static final int zoom_in=0x7f040008;
+        public static final int zoom_out=0x7f040009;
     }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
@@ -990,30 +990,33 @@ containing a value of this type.
         public static final int abs__title=0x7f07001b;
         public static final int abs__titleDivider=0x7f07001c;
         public static final int abs__up=0x7f07000b;
-        public static final int action_settings=0x7f070041;
-        public static final int animation=0x7f07003a;
-        public static final int appicon=0x7f07003f;
+        public static final int action_settings=0x7f070044;
+        public static final int animation=0x7f07003d;
+        public static final int appicon=0x7f070042;
+        public static final int button1=0x7f070037;
+        public static final int button2=0x7f070038;
+        public static final int button3=0x7f070039;
         public static final int disableHome=0x7f070009;
         public static final int edit_query=0x7f070027;
         public static final int homeAsUp=0x7f070006;
-        public static final int imageView1=0x7f070033;
+        public static final int imageView1=0x7f070035;
         public static final int listMode=0x7f070002;
-        public static final int listView1=0x7f070036;
-        public static final int listitem=0x7f07003d;
-        public static final int listsubitem=0x7f07003e;
-        public static final int menu_settings=0x7f070040;
+        public static final int listitem=0x7f070040;
+        public static final int listsubitem=0x7f070041;
+        public static final int menu_settings=0x7f070043;
         public static final int normal=0x7f070001;
-        public static final int notices=0x7f07003c;
-        public static final int panelbackground=0x7f070038;
-        public static final int panelcontents=0x7f070039;
-        public static final int scrollView=0x7f07003b;
+        public static final int notices=0x7f07003f;
+        public static final int panelbackground=0x7f07003b;
+        public static final int panelcontents=0x7f07003c;
+        public static final int scrollView=0x7f07003e;
         public static final int showCustom=0x7f070008;
         public static final int showHome=0x7f070005;
         public static final int showTitle=0x7f070007;
         public static final int tabMode=0x7f070003;
-        public static final int textView1=0x7f070034;
-        public static final int textView2=0x7f070035;
-        public static final int transparentbackground=0x7f070037;
+        public static final int textView1=0x7f070036;
+        public static final int textView2=0x7f070034;
+        public static final int textView3=0x7f070033;
+        public static final int transparentbackground=0x7f07003a;
         public static final int useLogo=0x7f070004;
         public static final int wrap_content=0x7f070000;
     }
@@ -1053,10 +1056,10 @@ containing a value of this type.
         public static final int sherlock_spinner_item=0x7f03001d;
     }
     public static final class menu {
-        public static final int activity_appinfo=0x7f0f0000;
-        public static final int activity_main=0x7f0f0001;
-        public static final int activity_notices=0x7f0f0002;
-        public static final int home=0x7f0f0003;
+        public static final int activity_appinfo=0x7f0e0000;
+        public static final int activity_main=0x7f0e0001;
+        public static final int activity_notices=0x7f0e0002;
+        public static final int home=0x7f0e0003;
     }
     public static final class raw {
         public static final int third_party_notices=0x7f060000;
@@ -1128,6 +1131,9 @@ containing a value of this type.
         public static final int dummy_button=0x7f0c0013;
         public static final int dummy_content=0x7f0c0012;
         public static final int hello_world=0x7f0c001a;
+        public static final int info_feedback=0x7f0c0027;
+        public static final int info_thirdparty=0x7f0c0028;
+        public static final int info_updatecheck=0x7f0c0026;
         public static final int label_settings=0x7f0c001b;
         public static final int label_sum_settings=0x7f0c001c;
         public static final int menu_settings=0x7f0c0016;
@@ -1141,8 +1147,8 @@ containing a value of this type.
         public static final int pref_guide_sub=0x7f0c0021;
         public static final int pref_service_toggle=0x7f0c0017;
         public static final int pref_service_toggle_sub=0x7f0c0018;
-        public static final int service_off=0x7f0c0027;
-        public static final int service_on=0x7f0c0026;
+        public static final int service_off=0x7f0c002a;
+        public static final int service_on=0x7f0c0029;
         public static final int title_activity_appinfo=0x7f0c0011;
         public static final int title_activity_home=0x7f0c0019;
         public static final int title_activity_left_side_panel=0x7f0c0014;

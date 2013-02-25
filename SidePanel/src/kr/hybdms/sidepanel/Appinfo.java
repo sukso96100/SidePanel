@@ -26,65 +26,43 @@ import android.os.Bundle;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ListView;
 
-public class Appinfo extends SherlockActivity {
-	 private ListView mListView;
-	 private ArrayList<String> mArrayList;
-	 private ArrayAdapter<String> mArrayAdpter;
+public class Appinfo extends SherlockActivity implements OnClickListener {
 	    @Override
 	    public void onCreate(Bundle savedInstanceState) {
 	        super.onCreate(savedInstanceState);
 	        setContentView(R.layout.activity_appinfo);       
-	        mListView = (ListView)findViewById(R.id.listView1); //ListView 가져오기	        
-	        mArrayList = new ArrayList<String>(); //List 저장할 array
-	        //Adapter 생성
-	        mArrayAdpter = new ArrayAdapter<String>(this, 
-	              android.R.layout.simple_list_item_1, mArrayList);
-	        mListView.setAdapter(mArrayAdpter);//List에 adapter등록
-	        mListView.setOnItemClickListener(itemClickListenerOfLanguageList);
-	    }
-	 @Override
-	 protected void onResume() {
-		  // TODO Auto-generated method stub
-		  super.onResume();
-		  Resources res = getResources();
-		  String[] menuString = res.getStringArray(R.array.appinfo_array);
-		  for(String s: menuString){
-		   mArrayList.add(s);
-		  }
-		 }
-	 private OnItemClickListener itemClickListenerOfLanguageList = new OnItemClickListener()
-	    {
-		 @Override
-	        public void onItemClick(AdapterView<?> adapterView, View clickedView, int position, long id)
-	        {
+	        Button a=(Button)findViewById(R.id.button3);
+	        Button b=(Button)findViewById(R.id.button2);
+	        Button c=(Button)findViewById(R.id.button1);
+	        a.setOnClickListener(this);
+	        b.setOnClickListener(this);
+	        c.setOnClickListener(this);
+}
+
+		@Override
+		public void onClick(View v) {
 			// TODO Auto-generated method stub
-	  
-	  if(position == 1){
-		Intent intent = new Intent(Intent.ACTION_VIEW);
-     intent.setData(Uri.parse("http://play.google.com"));
-     startActivity(intent);
-	  }
-	  else if(position == 2){
-	  Intent it2 = new Intent(Intent.ACTION_VIEW);
-  	it2.setData(Uri.parse("http://hybdms.blogspot.com"));
-  	startActivity(it2);
-	        }
-	  else if(position == 4){
-		  Intent it = new Intent(Intent.ACTION_SENDTO);
-	    	it.setData(Uri.parse("sukso96100@gmail.com"));
-	    	startActivity(it);
-	  }
-	  else if(position == 5){
-		  Intent intent5 = new Intent(Appinfo.this, Notices.class); 
-	    	 startActivity(intent5);
-		  }
- }
-};
-
-
+			switch(v.getId()) {
+	           case R.id.button1:
+	        	  Intent thirdparty = new Intent(Appinfo.this, Notices.class); 
+	   	    	  startActivity(thirdparty);	 
+	           break;
+	           case R.id.button2:
+	             Intent feedback = new Intent(Intent.ACTION_SENDTO);
+	        	  feedback.setData(Uri.parse("mailto:sukso96100@gmail.com"));
+	   	    	  startActivity(feedback);
+	           break;
+	           case R.id.button3:
+	             Intent update = new Intent(Intent.ACTION_VIEW);
+	             update.setData(Uri.parse("http://play.google.com/store/apps/details?id=kr.hybdms.sidepanel"));
+	             startActivity(update);
+			}
+		}
 }

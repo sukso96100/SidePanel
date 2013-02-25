@@ -15,11 +15,11 @@
 <set xmlns:android="http://schemas.android.com/apk/res/android"
          android:shareInterpolator="false">
          <alpha xmlns:android="http://schemas.android.com/apk/res/android"
-    android:fromAlpha="1.0" 
-    android:toAlpha="0.0" 
+    android:fromAlpha="0.0" 
+    android:toAlpha="1.0" 
     />
-      <translate
-       android:fromXDelta="0%" android:toXDelta="100%"
-       android:fromYDelta="0%" android:toYDelta="0%"
-       android:duration="@android:integer/config_mediumAnimTime" />
-    </set>
+        <translate 
+          android:fromXDelta="100%" android:toXDelta="0%"
+          android:fromYDelta="0%" android:toYDelta="0%"
+          android:duration="@android:integer/config_mediumAnimTime" />
+       </set>

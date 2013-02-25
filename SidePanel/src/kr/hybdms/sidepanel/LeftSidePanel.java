@@ -91,7 +91,7 @@ public class LeftSidePanel extends Activity {
 	   public void onItemClick(AdapterView<?> parent, View view, int postion, long id) {
 		   Intent taskintent = getPackageManager().getLaunchIntentForPackage(packageName.get(postion).toString());
 	       startActivity(taskintent);
-	       overridePendingTransition(R.anim.right_slide_out, R.anim.zoom_in);
+	       overridePendingTransition(R.anim.left_slide_in, R.anim.zoom_out);
 	       finish();
 	   } 
 	  });
