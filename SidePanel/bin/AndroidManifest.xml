@@ -17,10 +17,11 @@
         android:label="@string/app_name"
         android:theme="@style/Theme.Sherlock.Light" >
         <activity
-            android:name=".Settings"
+            android:name="kr.hybdms.sidepanel.Settings"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -38,7 +39,7 @@
                 <action android:name="kr.hybdms.sidepanel" />
 
                 <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>  
+            </intent-filter>
         </service>
 
         <activity
@@ -57,7 +58,10 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="kr.hybdms.sidepanel.Appinfo" />
         </activity>
-                
+        <activity
+            android:name="kr.hybdms.sidepanel.Guide"
+            android:label="@string/title_activity_guide" >
+        </activity>
     </application>
 
 </manifest>

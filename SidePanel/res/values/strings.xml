@@ -3,13 +3,13 @@
 
     <string name="app_name">SidePanel</string>
     <string name="button_appinfo">Application Information</string>
-    <string name="title_activity_appinfo">Application Information</string>
+    <string name="title_activity_appinfo">About this app</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="title_activity_left_side_panel">LeftSidePanel</string>
     <string name="title_activity_notices">Third-Party Notices</string>
     <string name="menu_settings" />
-    <string name="pref_service_toggle">서비스 활성화하기</string>
+    <string name="pref_service_toggle">Enable Service</string>
     <string name="pref_service_toggle_sub">Check to Enable SidePanel Service</string>
     <string name="title_activity_home">Home</string>
     <string name="hello_world">Hello world!</string>
@@ -27,9 +27,17 @@
     <string name="info_updatecheck">Check for updates</string>
     <string name="info_feedback">Send feedback</string>
     <string name="info_thirdparty">Third-Party notices</string>
-    
-    
-
-    
+    <string name="pref_previously_started">firstrun</string>
+    <string name="title_activity_guide">App Using Guide</string>
+    <string name="guide_welcome">WELCOME!</string>
+    <string name="guide_welcome_info">Know how to use SidePanel before use it</string>
+    <string name="guide_welcome_continue">Slide right to left to continue</string>
+    <string name="guide_2_1">Check &quot;Enable Service&quot; to enable service</string>
+    <string name="guide_3_1">Swipe from edge to open panel</string>
+    <string name="guide_3_2">Click item to switch to other app</string>
+    <string name="guide_4_ready">Ready to Use!</string>
+    <string name="guide_4_close">Click &quot;Close Guide&quot; to close guide</string>
+    <string name="guide_close">Close Guide</string>
+    <string name="guide_welcome_close">To Skip, Click &quot;Close Guide&quot;</string>
 
 </resources>

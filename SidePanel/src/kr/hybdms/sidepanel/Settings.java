@@ -21,28 +21,39 @@ public class Settings extends SherlockPreferenceActivity implements OnPreference
 	    super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.settings);
         
+        boolean firstrun = getSharedPreferences("BOOT_PREF", MODE_PRIVATE).getBoolean("firstrun", true);
+
+        if (firstrun){
+        	Intent guide = new Intent(Settings.this, Guide.class); 
+	    	 startActivity(guide);
+        	
+            getSharedPreferences("BOOT_PREF", MODE_PRIVATE)
+                .edit()
+                .putBoolean("firstrun", false)
+                .commit();
+        }
+
+    
+        
         CheckBoxPreference checkboxPref = (CheckBoxPreference)getPreferenceManager().findPreference("service_toggle");
-
         checkboxPref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {            
-
         public boolean onPreferenceChange(Preference preference, Object newValue) {
-
                boolean myValue = (Boolean) newValue;
-
                if(myValue)
                        startService(new Intent(Settings.this, TouchDetectService.class));
                else
                        stopService(new Intent(Settings.this, TouchDetectService.class));
-
               return true;
          }
      }); 
         
         Preference pAppName = (Preference)findPreference("blog_intent");
         Preference pAppVersion = (Preference)findPreference("appinfo_intent");
+        Preference guideintent = (Preference)findPreference("guide_intent");
          
         pAppName.setOnPreferenceClickListener(this);
         pAppVersion.setOnPreferenceClickListener(this);
+        guideintent.setOnPreferenceClickListener(this);
     }
  
     @Override
@@ -59,6 +70,11 @@ public class Settings extends SherlockPreferenceActivity implements OnPreference
         else if(preference.getKey().equals("appinfo_intent"))
         {
         	Intent appinfo = new Intent(Settings.this, Appinfo.class); 
+	    	 startActivity(appinfo);
+        }
+        else if(preference.getKey().equals("guide_intent"))
+        {
+        	Intent appinfo = new Intent(Settings.this, Guide.class); 
 	    	 startActivity(appinfo);
         }
         return false;

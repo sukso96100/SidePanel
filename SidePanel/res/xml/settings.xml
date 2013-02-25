@@ -19,7 +19,7 @@
         xmlns:android="http://schemas.android.com/apk/res/android">
     <CheckBoxPreference android:key="service_toggle" android:title="@string/pref_service_toggle" android:summary="@string/pref_service_toggle_sub" android:defaultValue="false"/>
     <CheckBoxPreference android:key="autostart_toggle" android:title="@string/pref_auto" android:summary="@string/pref_auto_sub" android:defaultValue="false" android:selectable="false" android:enabled="false"/>
-    <Preference android:key="guide_intent" android:selectable="false" android:summary="@string/pref_guide_sub" android:title="@string/pref_guide" android:enabled="false"/>
+    <Preference android:key="guide_intent" android:summary="@string/pref_guide_sub" android:title="@string/pref_guide"/>
     <Preference android:key="blog_intent" android:summary="@string/pref_blog_sub" android:title="@string/pref_blog"/>
     <Preference android:key="appinfo_intent" android:summary="@string/pref_appinfo_sub" android:title="@string/pref_appinfo"/>
 
