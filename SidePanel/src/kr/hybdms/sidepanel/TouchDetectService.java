@@ -20,6 +20,7 @@ package kr.hybdms.sidepanel;
 import android.app.Service;
 import android.content.Intent;
 import android.os.IBinder;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.MotionEvent;
 import android.view.View;
@@ -58,7 +59,7 @@ public class TouchDetectService extends Service {
     public void onCreate() {
         super.onCreate();
         
-       
+        Log.i("BOOTSVC", "Service started at the BOOT_COMPLETED.");
 
             mTouchDetector = new ImageView(this);                                         //뷰 생성
             mTouchDetector.setImageResource(R.drawable.detector);

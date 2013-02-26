@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="kr.hybdms.sidepanel"
-    android:versionCode="5"
-    android:versionName="0.4(beta)" >
+    android:versionCode="6"
+    android:versionName="0.5(beta)" >
 
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
     <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
 
     <uses-sdk
         android:minSdkVersion="8"
@@ -62,6 +63,14 @@
             android:name="kr.hybdms.sidepanel.Guide"
             android:label="@string/title_activity_guide" >
         </activity>
+        <receiver android:name=".Autostarter"
+   android:enabled="true"
+   android:exported="false"
+   android:label="SidePanelServiceAutoStarter" >
+  <intent-filter>
+   <action android:name="android.intent.action.BOOT_COMPLETED" />
+  </intent-filter>
+</receiver>
     </application>
 
 </manifest>
