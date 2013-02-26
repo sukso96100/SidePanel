@@ -39,5 +39,6 @@
     <string name="guide_4_close">Click &quot;Close Guide&quot; to close guide</string>
     <string name="guide_close">Close Guide</string>
     <string name="guide_welcome_close">To Skip, Click &quot;Close Guide&quot;</string>
+    <string name="title_activity_changelogs">Change Logs</string>
 
 </resources>

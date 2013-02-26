@@ -1,0 +1,20 @@
+0.5(beta) - 2/26
+Added "Start on Boot" option
+Added Changelogs screen
+
+0.4(beta) - 2/25
+Changed "About this app" screen layout
+Added App using Guide(Welcome screen) which shows only once
+Updated some animations
+
+0.3(beta) - 2/24
+Added app swithcing from panel animation
+changed service toggle screen to app settings screen
+fixed the toggle button labeled "disabled" when enter toggle screen again after enable service
+
+0.2(beta) - 2/22
+(Fixed) Status bar hided when the panel opens
+Added Panel Opening Animation
+
+0.1(beta) - 2/21
+Initial Release

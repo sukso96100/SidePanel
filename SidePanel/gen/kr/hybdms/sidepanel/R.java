@@ -826,10 +826,6 @@ containing a value of this type.
          */
         public static final int action_button_min_width=0x7f0a0010;
         /**  Default screen margins, per the Android Design guidelines. 
-
-         Customize dimensions originally defined in res/values/dimens.xml (such as
-         screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
-    
          */
         public static final int activity_horizontal_margin=0x7f0a0011;
         public static final int activity_vertical_margin=0x7f0a0012;
@@ -996,37 +992,39 @@ containing a value of this type.
         public static final int abs__title=0x7f07001b;
         public static final int abs__titleDivider=0x7f07001c;
         public static final int abs__up=0x7f07000b;
-        public static final int action_settings=0x7f070047;
-        public static final int animation=0x7f07003e;
-        public static final int appicon=0x7f070045;
-        public static final int button1=0x7f070037;
-        public static final int button2=0x7f070038;
-        public static final int button3=0x7f070039;
+        public static final int action_settings=0x7f070049;
+        public static final int animation=0x7f070041;
+        public static final int appicon=0x7f070047;
+        public static final int button1=0x7f070033;
+        public static final int button2=0x7f070034;
+        public static final int button3=0x7f070035;
+        public static final int button4=0x7f070036;
+        public static final int changelogs=0x7f07003c;
         public static final int disableHome=0x7f070009;
         public static final int edit_query=0x7f070027;
         public static final int homeAsUp=0x7f070006;
-        public static final int imageView1=0x7f070035;
+        public static final int imageView1=0x7f070038;
         public static final int listMode=0x7f070002;
-        public static final int listitem=0x7f070043;
-        public static final int listsubitem=0x7f070044;
-        public static final int menu_settings=0x7f070046;
+        public static final int listitem=0x7f070045;
+        public static final int listsubitem=0x7f070046;
+        public static final int menu_settings=0x7f070048;
         public static final int normal=0x7f070001;
-        public static final int notices=0x7f070040;
-        public static final int panelbackground=0x7f07003c;
-        public static final int panelcontents=0x7f07003d;
-        public static final int scrollView=0x7f07003f;
+        public static final int notices=0x7f070042;
+        public static final int panelbackground=0x7f07003f;
+        public static final int panelcontents=0x7f070040;
+        public static final int scrollView=0x7f07003b;
         public static final int showCustom=0x7f070008;
         public static final int showHome=0x7f070005;
         public static final int showTitle=0x7f070007;
         public static final int tabMode=0x7f070003;
-        public static final int textView1=0x7f070036;
-        public static final int textView2=0x7f070034;
-        public static final int textView3=0x7f070033;
-        public static final int textView4=0x7f070041;
-        public static final int textView5=0x7f070042;
-        public static final int transparentbackground=0x7f07003b;
+        public static final int textView1=0x7f070039;
+        public static final int textView2=0x7f07003a;
+        public static final int textView3=0x7f070037;
+        public static final int textView4=0x7f070043;
+        public static final int textView5=0x7f070044;
+        public static final int transparentbackground=0x7f07003e;
         public static final int useLogo=0x7f070004;
-        public static final int viewFlipper1=0x7f07003a;
+        public static final int viewFlipper1=0x7f07003d;
         public static final int wrap_content=0x7f070000;
     }
     public static final class integer {
@@ -1057,27 +1055,30 @@ containing a value of this type.
         public static final int abs__search_view=0x7f030015;
         public static final int abs__simple_dropdown_hint=0x7f030016;
         public static final int activity_appinfo=0x7f030017;
-        public static final int activity_guide=0x7f030018;
-        public static final int activity_left_side_panel=0x7f030019;
-        public static final int activity_notices=0x7f03001a;
-        public static final int guideview_1=0x7f03001b;
-        public static final int guideview_2=0x7f03001c;
-        public static final int guideview_3=0x7f03001d;
-        public static final int guideview_4=0x7f03001e;
-        public static final int listrow=0x7f03001f;
-        public static final int panelrow=0x7f030020;
-        public static final int sherlock_spinner_dropdown_item=0x7f030021;
-        public static final int sherlock_spinner_item=0x7f030022;
+        public static final int activity_changelogs=0x7f030018;
+        public static final int activity_guide=0x7f030019;
+        public static final int activity_left_side_panel=0x7f03001a;
+        public static final int activity_notices=0x7f03001b;
+        public static final int guideview_1=0x7f03001c;
+        public static final int guideview_2=0x7f03001d;
+        public static final int guideview_3=0x7f03001e;
+        public static final int guideview_4=0x7f03001f;
+        public static final int listrow=0x7f030020;
+        public static final int panelrow=0x7f030021;
+        public static final int sherlock_spinner_dropdown_item=0x7f030022;
+        public static final int sherlock_spinner_item=0x7f030023;
     }
     public static final class menu {
         public static final int activity_appinfo=0x7f0e0000;
         public static final int activity_main=0x7f0e0001;
         public static final int activity_notices=0x7f0e0002;
-        public static final int guide=0x7f0e0003;
-        public static final int home=0x7f0e0004;
+        public static final int changelogs=0x7f0e0003;
+        public static final int guide=0x7f0e0004;
+        public static final int home=0x7f0e0005;
     }
     public static final class raw {
-        public static final int third_party_notices=0x7f060000;
+        public static final int changelogs=0x7f060000;
+        public static final int third_party_notices=0x7f060001;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1173,9 +1174,10 @@ containing a value of this type.
         public static final int pref_previously_started=0x7f0c0029;
         public static final int pref_service_toggle=0x7f0c0017;
         public static final int pref_service_toggle_sub=0x7f0c0018;
-        public static final int service_off=0x7f0c0036;
-        public static final int service_on=0x7f0c0035;
+        public static final int service_off=0x7f0c0037;
+        public static final int service_on=0x7f0c0036;
         public static final int title_activity_appinfo=0x7f0c0011;
+        public static final int title_activity_changelogs=0x7f0c0035;
         public static final int title_activity_guide=0x7f0c002a;
         public static final int title_activity_home=0x7f0c0019;
         public static final int title_activity_left_side_panel=0x7f0c0014;

@@ -41,9 +41,11 @@ public class Appinfo extends SherlockActivity implements OnClickListener {
 	        Button a=(Button)findViewById(R.id.button3);
 	        Button b=(Button)findViewById(R.id.button2);
 	        Button c=(Button)findViewById(R.id.button1);
+	        Button d=(Button)findViewById(R.id.button4);
 	        a.setOnClickListener(this);
 	        b.setOnClickListener(this);
 	        c.setOnClickListener(this);
+	        d.setOnClickListener(this);
 }
 
 		@Override
@@ -63,6 +65,10 @@ public class Appinfo extends SherlockActivity implements OnClickListener {
 	             Intent update = new Intent(Intent.ACTION_VIEW);
 	             update.setData(Uri.parse("http://play.google.com/store/apps/details?id=kr.hybdms.sidepanel"));
 	             startActivity(update);
+	             break;
+	           case R.id.button4:
+	             Intent changelogs = new Intent(Appinfo.this, Changelogs.class); 
+	             startActivity(changelogs);
 			}
 		}
 }

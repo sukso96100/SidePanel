@@ -63,14 +63,25 @@
             android:name="kr.hybdms.sidepanel.Guide"
             android:label="@string/title_activity_guide" >
         </activity>
-        <receiver android:name=".Autostarter"
-   android:enabled="true"
-   android:exported="false"
-   android:label="SidePanelServiceAutoStarter" >
-  <intent-filter>
-   <action android:name="android.intent.action.BOOT_COMPLETED" />
-  </intent-filter>
-</receiver>
+
+        <receiver
+            android:name="kr.hybdms.sidepanel.Autostarter"
+            android:enabled="true"
+            android:exported="false"
+            android:label="SidePanelServiceAutoStarter" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="kr.hybdms.sidepanel.Changelogs"
+            android:label="@string/title_activity_changelogs"
+            android:parentActivityName="kr.hybdms.sidepanel.Appinfo" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kr.hybdms.sidepanel.Appinfo" />
+        </activity>
     </application>
 
 </manifest>
