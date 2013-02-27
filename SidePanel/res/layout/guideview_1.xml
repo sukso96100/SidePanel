@@ -69,7 +69,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="◆◇◇◇"
+        android:text="◆◇◇◇◇◇"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
 </RelativeLayout>
