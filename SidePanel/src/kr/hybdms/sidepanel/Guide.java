@@ -135,8 +135,7 @@ flipper.stopFlipping();
 @Override
 public void onClick(View v) {
 	// TODO Auto-generated method stub
-	 Intent close = new Intent(Guide.this, Settings.class); 
-  	  startActivity(close);
+
   	  finish();
 }
 }

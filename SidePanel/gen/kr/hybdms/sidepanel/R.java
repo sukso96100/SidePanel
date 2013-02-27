@@ -1075,16 +1075,17 @@ containing a value of this type.
         public static final int guideview_1=0x7f03001c;
         public static final int guideview_2=0x7f03001d;
         public static final int guideview_3=0x7f03001e;
-        public static final int guideview_5=0x7f03001f;
-        public static final int guideview_6=0x7f030020;
-        public static final int listrow=0x7f030021;
-        public static final int panelrow_dark=0x7f030022;
-        public static final int panelrow_default=0x7f030023;
-        public static final int panelrow_light=0x7f030024;
-        public static final int panelrow_none=0x7f030025;
-        public static final int right_side_panel=0x7f030026;
-        public static final int sherlock_spinner_dropdown_item=0x7f030027;
-        public static final int sherlock_spinner_item=0x7f030028;
+        public static final int guideview_4=0x7f03001f;
+        public static final int guideview_5=0x7f030020;
+        public static final int guideview_6=0x7f030021;
+        public static final int listrow=0x7f030022;
+        public static final int panelrow_dark=0x7f030023;
+        public static final int panelrow_default=0x7f030024;
+        public static final int panelrow_light=0x7f030025;
+        public static final int panelrow_none=0x7f030026;
+        public static final int right_side_panel=0x7f030027;
+        public static final int sherlock_spinner_dropdown_item=0x7f030028;
+        public static final int sherlock_spinner_item=0x7f030029;
     }
     public static final class menu {
         public static final int activity_appinfo=0x7f0f0000;
