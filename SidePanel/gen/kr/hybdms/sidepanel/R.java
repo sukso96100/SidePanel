@@ -20,6 +20,12 @@ public final class R {
         public static final int zoom_in=0x7f040008;
         public static final int zoom_out=0x7f040009;
     }
+    public static final class array {
+        public static final int itembg_string=0x7f0e0001;
+        public static final int itembg_value=0x7f0e0000;
+        public static final int panelbg_string=0x7f0e0003;
+        public static final int panelbg_value=0x7f0e0002;
+    }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -946,11 +952,15 @@ containing a value of this type.
         public static final int guide_1=0x7f020070;
         public static final int guide_2=0x7f020071;
         public static final int ic_launcher=0x7f020072;
-        public static final int itembg=0x7f020073;
-        public static final int panel_item_bg=0x7f020074;
-        public static final int panel_item_bg_normal=0x7f020075;
-        public static final int panel_item_bg_press=0x7f020076;
-        public static final int panelbg=0x7f020077;
+        public static final int itembg_dark=0x7f020073;
+        public static final int itembg_default=0x7f020074;
+        public static final int itembg_light=0x7f020075;
+        public static final int itembg_none=0x7f020076;
+        public static final int panel_item_bg=0x7f020077;
+        public static final int panel_item_bg_normal=0x7f020078;
+        public static final int panel_item_bg_press=0x7f020079;
+        public static final int panelbg=0x7f02007a;
+        public static final int panelbg_light=0x7f02007b;
     }
     public static final class id {
         public static final int abs__action_bar=0x7f070022;
@@ -1065,18 +1075,21 @@ containing a value of this type.
         public static final int guideview_3=0x7f03001e;
         public static final int guideview_4=0x7f03001f;
         public static final int listrow=0x7f030020;
-        public static final int panelrow=0x7f030021;
-        public static final int right_side_panel=0x7f030022;
-        public static final int sherlock_spinner_dropdown_item=0x7f030023;
-        public static final int sherlock_spinner_item=0x7f030024;
+        public static final int panelrow_dark=0x7f030021;
+        public static final int panelrow_default=0x7f030022;
+        public static final int panelrow_light=0x7f030023;
+        public static final int panelrow_none=0x7f030024;
+        public static final int right_side_panel=0x7f030025;
+        public static final int sherlock_spinner_dropdown_item=0x7f030026;
+        public static final int sherlock_spinner_item=0x7f030027;
     }
     public static final class menu {
-        public static final int activity_appinfo=0x7f0e0000;
-        public static final int activity_main=0x7f0e0001;
-        public static final int activity_notices=0x7f0e0002;
-        public static final int changelogs=0x7f0e0003;
-        public static final int guide=0x7f0e0004;
-        public static final int home=0x7f0e0005;
+        public static final int activity_appinfo=0x7f0f0000;
+        public static final int activity_main=0x7f0f0001;
+        public static final int activity_notices=0x7f0f0002;
+        public static final int changelogs=0x7f0f0003;
+        public static final int guide=0x7f0f0004;
+        public static final int home=0x7f0f0005;
     }
     public static final class raw {
         public static final int changelogs=0x7f060000;
@@ -1173,13 +1186,17 @@ containing a value of this type.
         public static final int pref_blog_sub=0x7f0c0023;
         public static final int pref_guide=0x7f0c0020;
         public static final int pref_guide_sub=0x7f0c0021;
+        public static final int pref_itembg=0x7f0c0038;
+        public static final int pref_itembg_sub=0x7f0c0039;
+        public static final int pref_panelbg=0x7f0c003a;
+        public static final int pref_panelbg_sub=0x7f0c003b;
         public static final int pref_panelpos_right=0x7f0c0036;
         public static final int pref_panelpos_right_sub=0x7f0c0037;
         public static final int pref_previously_started=0x7f0c0029;
         public static final int pref_service_toggle=0x7f0c0017;
         public static final int pref_service_toggle_sub=0x7f0c0018;
-        public static final int service_off=0x7f0c0039;
-        public static final int service_on=0x7f0c0038;
+        public static final int service_off=0x7f0c003d;
+        public static final int service_on=0x7f0c003c;
         public static final int title_activity_appinfo=0x7f0c0011;
         public static final int title_activity_changelogs=0x7f0c0035;
         public static final int title_activity_guide=0x7f0c002a;

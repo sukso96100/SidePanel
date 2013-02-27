@@ -43,5 +43,20 @@
     <string name="pref_panelpos_right">오른쪽 패널 사용하기</string>
     <string name="pref_panelpos_right_sub">왼쪽 패널 대신 오른쪽 패널 사용하기</string>
 
+    <string-array name="itembg_string">
+    <item>기본</item>
+    <item>어두운 회색</item>
+    <item>밝은 회색</item>
+    <item>없음</item>
+    </string-array>
 
+    <string-array name="panelbg_string">
+    <item>어두운 회색</item>
+    <item>흰색</item>
+    </string-array>
+    <string name="pref_itembg">항목 배경</string>
+    <string name="pref_itembg_sub">패널 항목 배경 바꾸기</string>
+    <string name="pref_panelbg">패널 배경색상</string>
+    <string name="pref_panelbg_sub">패널 배경색상 바꾸기</string>
+    
 </resources>

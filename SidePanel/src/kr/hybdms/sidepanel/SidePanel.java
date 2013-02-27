@@ -32,10 +32,12 @@ import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
 
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
@@ -68,6 +70,7 @@ public class SidePanel extends Activity {
 		  setContentView(R.layout.activity_left_side_panel);
 	  }
 	  ImageView imgbtn = (ImageView) findViewById(R.id.transparentbackground);
+	  ImageView panelbg = (ImageView) findViewById(R.id.panelbackground);
 	  listView = (ListView)findViewById(R.id.panelcontents);
 	  packageName = new ArrayList<String>();
 	  className = new ArrayList<String>();
@@ -92,12 +95,32 @@ public class SidePanel extends Activity {
 	   }
 	  }
 	  
+	  SharedPreferences myPreference = PreferenceManager.getDefaultSharedPreferences(this);
+	  String itembg = myPreference.getString("itembg_list", "");
 	  
-	  PanelArrayAdapter adapter = new PanelArrayAdapter(this,R.layout.panelrow, rowItems);
+	  if(itembg.equals("defaults"))
+	  {
+	  PanelArrayAdapter adapter = new PanelArrayAdapter(this,R.layout.panelrow_default, rowItems);
 	  listView.setAdapter(adapter);
+	  }
+	  else if(itembg.equals("dark"))
+	  {
+	  PanelArrayAdapter adapter = new PanelArrayAdapter(this,R.layout.panelrow_dark, rowItems);
+	  listView.setAdapter(adapter);
+	  }
+	  else if(itembg.equals("light"))
+	  {
+	  PanelArrayAdapter adapter = new PanelArrayAdapter(this,R.layout.panelrow_light, rowItems);
+	  listView.setAdapter(adapter);
+	  }
+	  else
+	  {
+	  PanelArrayAdapter adapter = new PanelArrayAdapter(this,R.layout.panelrow_none, rowItems);
+	  listView.setAdapter(adapter);
+	  }
 	  listView.setOnItemClickListener(new OnItemClickListener() {
 	   public void onItemClick(AdapterView<?> parent, View view, int postion, long id) {
-		   
+	   
 		   boolean rightpanel = getSharedPreferences(getPackageName() + "_preferences", Context.MODE_PRIVATE).getBoolean("panelpos_right", true);
 		   
 		   Intent taskintent = getPackageManager().getLaunchIntentForPackage(packageName.get(postion).toString());
@@ -112,6 +135,18 @@ public class SidePanel extends Activity {
 	       finish();
 	   } 
 	  });
+	  SharedPreferences panelbgpref = PreferenceManager.getDefaultSharedPreferences(this);
+	  String panelbgset = panelbgpref.getString("panelbg_list", "");
+	  
+	  if(panelbgset.equals("light"))
+	  {
+		  panelbg.setImageResource(R.drawable.panelbg_light);
+	  }
+	  else
+	  {
+		  panelbg.setImageResource(R.drawable.panelbg);
+	  }
+	  
 	  imgbtn.setOnClickListener(new View.OnClickListener(){
 			 public void onClick(View v) {
 				 if(v.getId() ==R.id.transparentbackground){

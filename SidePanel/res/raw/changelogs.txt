@@ -1,3 +1,8 @@
+0.6(beta) - 2/27
+Added "Use right side panel" option
+Added item background option
+Added panel background option
+
 0.5(beta) - 2/26
 Added "Start on Boot" option
 Added Changelogs screen

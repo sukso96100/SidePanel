@@ -42,5 +42,33 @@
     <string name="title_activity_changelogs">Change Logs</string>
     <string name="pref_panelpos_right">Use right side panel</string>
     <string name="pref_panelpos_right_sub">Use right side panel instead of left side panel</string>
-
+    
+    <string-array name="itembg_value">
+    <item>defaults</item>
+    <item>dark</item>
+    <item>light</item>
+    <item>none</item>
+    </string-array>
+    
+    <string-array name="itembg_string">
+    <item>default</item>
+    <item>dark</item>
+    <item>light gray</item>
+    <item>none</item>
+    </string-array>
+    
+    <string-array name="panelbg_value">
+    <item>dark</item>
+    <item>light</item>
+    </string-array>
+    
+    <string-array name="panelbg_string">
+    <item>dark</item>
+    <item>light</item>
+    </string-array>
+    <string name="pref_itembg">Item background</string>
+    <string name="pref_itembg_sub">Change panel item background</string>
+    <string name="pref_panelbg">Panel background color</string>
+    <string name="pref_panelbg_sub">Change panel background color</string>
+    
 </resources>
