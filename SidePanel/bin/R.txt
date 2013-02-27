@@ -457,8 +457,6 @@ int string pref_panelpos_right_sub 0x7f0c0037
 int string pref_previously_started 0x7f0c0029
 int string pref_service_toggle 0x7f0c0017
 int string pref_service_toggle_sub 0x7f0c0018
-int string service_off 0x7f0c003f
-int string service_on 0x7f0c003e
 int string title_activity_appinfo 0x7f0c0011
 int string title_activity_changelogs 0x7f0c0035
 int string title_activity_guide 0x7f0c002a

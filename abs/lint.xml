@@ -2,6 +2,6 @@
 <lint>
     <issue id="InvalidPackage" severity="warning" />
     <issue id="MissingPrefix" severity="warning" />
-    <issue id="MissingTranslation" severity="warning" />
     <issue id="NewApi" severity="warning" />
+    <issue id="WrongCall" severity="ignore" />
 </lint>

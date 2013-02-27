@@ -1201,8 +1201,6 @@ containing a value of this type.
         public static final int pref_previously_started=0x7f0c0029;
         public static final int pref_service_toggle=0x7f0c0017;
         public static final int pref_service_toggle_sub=0x7f0c0018;
-        public static final int service_off=0x7f0c003f;
-        public static final int service_on=0x7f0c003e;
         public static final int title_activity_appinfo=0x7f0c0011;
         public static final int title_activity_changelogs=0x7f0c0035;
         public static final int title_activity_guide=0x7f0c002a;
