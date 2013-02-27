@@ -58,11 +58,15 @@ RelativeLayout g1 = (RelativeLayout) View.inflate(this, R.layout.guideview_1, nu
 RelativeLayout g2 = (RelativeLayout) View.inflate(this, R.layout.guideview_2, null);
 RelativeLayout g3 = (RelativeLayout) View.inflate(this, R.layout.guideview_3, null);
 RelativeLayout g4 = (RelativeLayout) View.inflate(this, R.layout.guideview_4, null);
+RelativeLayout g5 = (RelativeLayout) View.inflate(this, R.layout.guideview_5, null);
+RelativeLayout g6 = (RelativeLayout) View.inflate(this, R.layout.guideview_6, null);
 
 flipper.addView(g1);
 flipper.addView(g2);
 flipper.addView(g3);
 flipper.addView(g4);
+flipper.addView(g5);
+flipper.addView(g6);
 
 Button a=(Button)findViewById(R.id.button1);
 a.setOnClickListener(this);

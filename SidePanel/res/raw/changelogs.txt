@@ -2,6 +2,7 @@
 Added "Use right side panel" option
 Added item background option
 Added panel background option
+Updated Using Guide
 
 0.5(beta) - 2/26
 Added "Start on Boot" option

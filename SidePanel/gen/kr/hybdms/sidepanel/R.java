@@ -951,16 +951,18 @@ containing a value of this type.
         public static final int detector=0x7f02006f;
         public static final int guide_1=0x7f020070;
         public static final int guide_2=0x7f020071;
-        public static final int ic_launcher=0x7f020072;
-        public static final int itembg_dark=0x7f020073;
-        public static final int itembg_default=0x7f020074;
-        public static final int itembg_light=0x7f020075;
-        public static final int itembg_none=0x7f020076;
-        public static final int panel_item_bg=0x7f020077;
-        public static final int panel_item_bg_normal=0x7f020078;
-        public static final int panel_item_bg_press=0x7f020079;
-        public static final int panelbg=0x7f02007a;
-        public static final int panelbg_light=0x7f02007b;
+        public static final int guide_3=0x7f020072;
+        public static final int guide_4=0x7f020073;
+        public static final int ic_launcher=0x7f020074;
+        public static final int itembg_dark=0x7f020075;
+        public static final int itembg_default=0x7f020076;
+        public static final int itembg_light=0x7f020077;
+        public static final int itembg_none=0x7f020078;
+        public static final int panel_item_bg=0x7f020079;
+        public static final int panel_item_bg_normal=0x7f02007a;
+        public static final int panel_item_bg_press=0x7f02007b;
+        public static final int panelbg=0x7f02007c;
+        public static final int panelbg_light=0x7f02007d;
     }
     public static final class id {
         public static final int abs__action_bar=0x7f070022;
@@ -1074,14 +1076,16 @@ containing a value of this type.
         public static final int guideview_2=0x7f03001d;
         public static final int guideview_3=0x7f03001e;
         public static final int guideview_4=0x7f03001f;
-        public static final int listrow=0x7f030020;
-        public static final int panelrow_dark=0x7f030021;
-        public static final int panelrow_default=0x7f030022;
-        public static final int panelrow_light=0x7f030023;
-        public static final int panelrow_none=0x7f030024;
-        public static final int right_side_panel=0x7f030025;
-        public static final int sherlock_spinner_dropdown_item=0x7f030026;
-        public static final int sherlock_spinner_item=0x7f030027;
+        public static final int guideview_5=0x7f030020;
+        public static final int guideview_6=0x7f030021;
+        public static final int listrow=0x7f030022;
+        public static final int panelrow_dark=0x7f030023;
+        public static final int panelrow_default=0x7f030024;
+        public static final int panelrow_light=0x7f030025;
+        public static final int panelrow_none=0x7f030026;
+        public static final int right_side_panel=0x7f030027;
+        public static final int sherlock_spinner_dropdown_item=0x7f030028;
+        public static final int sherlock_spinner_item=0x7f030029;
     }
     public static final class menu {
         public static final int activity_appinfo=0x7f0f0000;
@@ -1167,6 +1171,8 @@ containing a value of this type.
         public static final int guide_4_close=0x7f0c0032;
         public static final int guide_4_ready=0x7f0c0031;
         public static final int guide_close=0x7f0c0033;
+        public static final int guide_itembg=0x7f0c003c;
+        public static final int guide_panelbg=0x7f0c003d;
         public static final int guide_welcome=0x7f0c002b;
         public static final int guide_welcome_close=0x7f0c0034;
         public static final int guide_welcome_continue=0x7f0c002d;
@@ -1195,8 +1201,8 @@ containing a value of this type.
         public static final int pref_previously_started=0x7f0c0029;
         public static final int pref_service_toggle=0x7f0c0017;
         public static final int pref_service_toggle_sub=0x7f0c0018;
-        public static final int service_off=0x7f0c003d;
-        public static final int service_on=0x7f0c003c;
+        public static final int service_off=0x7f0c003f;
+        public static final int service_on=0x7f0c003e;
         public static final int title_activity_appinfo=0x7f0c0011;
         public static final int title_activity_changelogs=0x7f0c0035;
         public static final int title_activity_guide=0x7f0c002a;
