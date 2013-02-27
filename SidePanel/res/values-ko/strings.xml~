@@ -58,7 +58,5 @@
     <string name="pref_itembg_sub">패널 항목 배경 바꾸기</string>
     <string name="pref_panelbg">패널 배경색상</string>
     <string name="pref_panelbg_sub">패널 배경색상 바꾸기</string>
-    <string name="guide_itembg">"항목 배경"옵션을 사용하여\n 여항목 배경을 바꿉니다</string>
-    <string name="guide_panelbg">"패널 배경색상"옵션을 사용하여\n 패널 배경색상을 바꿉니다</string>
     
 </resources>

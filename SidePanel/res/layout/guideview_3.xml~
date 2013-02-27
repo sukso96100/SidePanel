@@ -24,7 +24,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:text="@string/guide_panelbg"
+        android:text="@string/guide_2_1"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <TextView
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="◇◇◇◆◇◇"
+        android:text="◇◆◇◇◇◇"
         android:textAppearance="?android:attr/textAppearanceSmall" />
 
     <ImageView
@@ -43,6 +43,6 @@
         android:layout_below="@+id/textView1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:src="@drawable/guide_4" />
+        android:src="@drawable/guide_3" />
 
 </RelativeLayout>

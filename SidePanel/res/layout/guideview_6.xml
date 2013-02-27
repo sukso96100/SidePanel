@@ -17,32 +17,40 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
 
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/abs__ic_cab_done_holo_light" />
+
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:text="@string/guide_panelbg"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:layout_marginTop="90dp"
+        android:text="@string/guide_4_ready"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
+        android:layout_below="@+id/imageView1"
         android:layout_centerHorizontal="true"
-        android:text="◇◇◇◆◇◇"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:layout_marginTop="80dp"
+        android:text="@string/guide_4_close" />
 
-    <ImageView
-        android:id="@+id/imageView1"
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView1"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:src="@drawable/guide_4" />
+        android:text="◇◇◇◆"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
 
 </RelativeLayout>
