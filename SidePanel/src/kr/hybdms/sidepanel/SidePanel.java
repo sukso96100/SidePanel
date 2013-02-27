@@ -30,6 +30,7 @@ import kr.hybdms.sidepanel.util.SystemUiHider;
 
 import android.app.Activity;
 import android.app.ActivityManager;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.PackageManager.NameNotFoundException;
@@ -48,7 +49,7 @@ import android.widget.ListView;
  * 
  * @see SystemUiHider
  */
-public class LeftSidePanel extends Activity {
+public class SidePanel extends Activity {
 	 private ArrayList<PanelItemDetail> rowItems = null;
 	 private ListView listView;
 	 private ArrayList<String> packageName = null;
@@ -56,9 +57,16 @@ public class LeftSidePanel extends Activity {
 	 
 	 protected void onCreate(Bundle savedInstanceState) {
 	  super.onCreate(savedInstanceState);
-	  overridePendingTransition(R.anim.right_slide_in_fast, 0);
-	  setContentView(R.layout.activity_left_side_panel);
-	  
+	  boolean rightpanel = getSharedPreferences(getPackageName() + "_preferences", Context.MODE_PRIVATE).getBoolean("panelpos_right", true);
+	  if(rightpanel){
+	  overridePendingTransition(R.anim.left_slide_in_fast, 0);
+	  setContentView(R.layout.right_side_panel);
+	  }
+	  else
+	  {
+		  overridePendingTransition(R.anim.right_slide_in_fast, 0);
+		  setContentView(R.layout.activity_left_side_panel);
+	  }
 	  ImageView imgbtn = (ImageView) findViewById(R.id.transparentbackground);
 	  listView = (ListView)findViewById(R.id.panelcontents);
 	  packageName = new ArrayList<String>();
@@ -89,9 +97,18 @@ public class LeftSidePanel extends Activity {
 	  listView.setAdapter(adapter);
 	  listView.setOnItemClickListener(new OnItemClickListener() {
 	   public void onItemClick(AdapterView<?> parent, View view, int postion, long id) {
+		   
+		   boolean rightpanel = getSharedPreferences(getPackageName() + "_preferences", Context.MODE_PRIVATE).getBoolean("panelpos_right", true);
+		   
 		   Intent taskintent = getPackageManager().getLaunchIntentForPackage(packageName.get(postion).toString());
 	       startActivity(taskintent);
-	       overridePendingTransition(R.anim.left_slide_in, R.anim.zoom_out);
+	       if(rightpanel){
+	       overridePendingTransition(R.anim.right_slide_in, R.anim.zoom_out);
+	       }
+	       else
+	       {
+	    	   overridePendingTransition(R.anim.left_slide_in, R.anim.zoom_out);
+	       }
 	       finish();
 	   } 
 	  });

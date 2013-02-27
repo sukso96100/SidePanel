@@ -1,0 +1,44 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeftSidePanel" >
+
+    <ImageView
+        android:id="@+id/panelbackground"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/panelbg" />
+
+    <ListView
+        android:id="@+id/panelcontents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/panelbackground"
+        android:layout_centerVertical="true"
+        android:divider="#00000000"
+        android:dividerHeight="10dp"
+        android:listSelector="@drawable/panel_item_bg" >
+
+    </ListView>
+    
+    	<ImageView
+		android:id="@+id/animation"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"/>
+
+    	<ImageView
+    	    android:id="@+id/transparentbackground"
+    	    android:layout_width="fill_parent"
+    	    android:layout_height="fill_parent"
+    	    android:layout_alignParentLeft="true"
+    	    android:layout_alignParentRight="true"
+    	    android:layout_alignParentTop="true"
+    	    android:adjustViewBounds="true"
+    	    android:gravity="center_vertical"
+    	    android:scaleType="fitXY" 
+           android:layout_marginRight="100dp"/>
+    
+</RelativeLayout>

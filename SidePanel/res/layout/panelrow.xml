@@ -18,11 +18,19 @@
         android:layout_height="fill_parent" >
 
 <ImageView
+    android:id="@+id/imageView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_centerHorizontal="true"
+    android:src="@drawable/itembg" />
+
+<ImageView
     android:id="@+id/appicon"
     android:layout_width="50dp"
     android:layout_height="50dp"
-    android:layout_alignParentTop="true"
+    android:layout_alignBottom="@+id/imageView1"
     android:layout_centerHorizontal="true"
-    android:layout_margin="10dp" />
+    android:layout_marginBottom="16dp" />
 
     </RelativeLayout>

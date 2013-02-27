@@ -18,6 +18,8 @@
 package kr.hybdms.sidepanel;
 
 import android.app.Service;
+import android.content.Context;
+import android.content.ContextWrapper;
 import android.content.Intent;
 import android.os.IBinder;
 import android.util.Log;
@@ -42,7 +44,7 @@ public class TouchDetectService extends Service {
 
 	            case MotionEvent.ACTION_MOVE:
 	            	
-	            	Intent lsp = new Intent(getBaseContext(), LeftSidePanel.class);
+	            	Intent lsp = new Intent(getBaseContext(), SidePanel.class);
 	            	lsp.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 	            	getApplication().startActivity(lsp);
 	                break;
@@ -59,9 +61,29 @@ public class TouchDetectService extends Service {
     public void onCreate() {
         super.onCreate();
         
+        boolean rightpanel = getSharedPreferences(getPackageName() + "_preferences", Context.MODE_PRIVATE).getBoolean("panelpos_right", true);
         Log.i("BOOTSVC", "Service started at the BOOT_COMPLETED.");
 
-            mTouchDetector = new ImageView(this);                                         //뷰 생성
+        if(rightpanel)
+        {
+        mTouchDetector = new ImageView(this);                                         //뷰 생성
+        mTouchDetector.setImageResource(R.drawable.detector);
+        mTouchDetector.setOnTouchListener(mViewTouchListener);              //팝업뷰에 터치 리스너 등록
+        //최상위 윈도우에 넣기 위한 설정
+        mParams = new WindowManager.LayoutParams(
+            WindowManager.LayoutParams.WRAP_CONTENT,
+            WindowManager.LayoutParams.WRAP_CONTENT,
+            WindowManager.LayoutParams.TYPE_PHONE,//항상 최 상위. 터치 이벤트 받을 수 있음.
+            WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE,  //포커스를 가지지 않음
+            PixelFormat.TRANSLUCENT);                                        //투명
+        mParams.gravity = Gravity.RIGHT | Gravity.CENTER;                   //왼쪽 상단에 위치하게 함.
+        
+        mWindowManager = (WindowManager) getSystemService(WINDOW_SERVICE);  //윈도우 매니저
+        mWindowManager.addView(mTouchDetector, mParams);      //윈도우에 뷰 넣기. permission 필요.   //윈도우에 뷰 넣기. permission 필요.
+        }
+        else
+        {
+        	mTouchDetector = new ImageView(this);                                         //뷰 생성
             mTouchDetector.setImageResource(R.drawable.detector);
             mTouchDetector.setOnTouchListener(mViewTouchListener);              //팝업뷰에 터치 리스너 등록
             //최상위 윈도우에 넣기 위한 설정
@@ -74,8 +96,10 @@ public class TouchDetectService extends Service {
             mParams.gravity = Gravity.LEFT | Gravity.CENTER;                   //왼쪽 상단에 위치하게 함.
             
             mWindowManager = (WindowManager) getSystemService(WINDOW_SERVICE);  //윈도우 매니저
-            mWindowManager.addView(mTouchDetector, mParams);      //윈도우에 뷰 넣기. permission 필요.
+            mWindowManager.addView(mTouchDetector, mParams);      //윈도우에 뷰 넣기. permission 필요.   //윈도우에 뷰 넣기. permission 필요.
         }
+        }
+
         
     
 

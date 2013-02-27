@@ -946,10 +946,11 @@ containing a value of this type.
         public static final int guide_1=0x7f020070;
         public static final int guide_2=0x7f020071;
         public static final int ic_launcher=0x7f020072;
-        public static final int panel_item_bg=0x7f020073;
-        public static final int panel_item_bg_normal=0x7f020074;
-        public static final int panel_item_bg_press=0x7f020075;
-        public static final int panelbg=0x7f020076;
+        public static final int itembg=0x7f020073;
+        public static final int panel_item_bg=0x7f020074;
+        public static final int panel_item_bg_normal=0x7f020075;
+        public static final int panel_item_bg_press=0x7f020076;
+        public static final int panelbg=0x7f020077;
     }
     public static final class id {
         public static final int abs__action_bar=0x7f070022;
@@ -1065,8 +1066,9 @@ containing a value of this type.
         public static final int guideview_4=0x7f03001f;
         public static final int listrow=0x7f030020;
         public static final int panelrow=0x7f030021;
-        public static final int sherlock_spinner_dropdown_item=0x7f030022;
-        public static final int sherlock_spinner_item=0x7f030023;
+        public static final int right_side_panel=0x7f030022;
+        public static final int sherlock_spinner_dropdown_item=0x7f030023;
+        public static final int sherlock_spinner_item=0x7f030024;
     }
     public static final class menu {
         public static final int activity_appinfo=0x7f0e0000;
@@ -1171,17 +1173,19 @@ containing a value of this type.
         public static final int pref_blog_sub=0x7f0c0023;
         public static final int pref_guide=0x7f0c0020;
         public static final int pref_guide_sub=0x7f0c0021;
+        public static final int pref_panelpos_right=0x7f0c0036;
+        public static final int pref_panelpos_right_sub=0x7f0c0037;
         public static final int pref_previously_started=0x7f0c0029;
         public static final int pref_service_toggle=0x7f0c0017;
         public static final int pref_service_toggle_sub=0x7f0c0018;
-        public static final int service_off=0x7f0c0037;
-        public static final int service_on=0x7f0c0036;
+        public static final int service_off=0x7f0c0039;
+        public static final int service_on=0x7f0c0038;
         public static final int title_activity_appinfo=0x7f0c0011;
         public static final int title_activity_changelogs=0x7f0c0035;
         public static final int title_activity_guide=0x7f0c002a;
         public static final int title_activity_home=0x7f0c0019;
-        public static final int title_activity_left_side_panel=0x7f0c0014;
         public static final int title_activity_notices=0x7f0c0015;
+        public static final int title_activity_side_panel=0x7f0c0014;
     }
     public static final class style {
         /** 

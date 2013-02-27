@@ -7,7 +7,7 @@
     <string name="button_appinfo">애플리케이션 정보</string>
     <string name="title_activity_appinfo">애플리케이션 정보</string>
     <string name="title_activity_notices">제 3자 고지사항</string>
-    <string name="title_activity_left_side_panel">좌측 패널</string>
+    <string name="title_activity_side_panel">!측면 패널!</string>
     <string name="dummy_content">더미컨텐츠</string>
     <string name="dummy_button">더미버튼</string>
     <string name="menu_settings"/>
@@ -40,6 +40,8 @@
     <string name="guide_close">도움말 닫기</string>
     <string name="guide_welcome_close">건너뛰려면, &quot;도움말 닫기&quot;를 누르세요.</string>
     <string name="title_activity_changelogs">변경사항</string>
+    <string name="pref_panelpos_right">오른쪽 패널 사용하기</string>
+    <string name="pref_panelpos_right_sub">왼쪽 패널 대신 오른쪽 패널 사용하기</string>
 
 
 </resources>

@@ -44,8 +44,8 @@
         </service>
 
         <activity
-            android:name="kr.hybdms.sidepanel.LeftSidePanel"
-            android:label="@string/title_activity_left_side_panel"
+            android:name="kr.hybdms.sidepanel.SidePanel"
+            android:label="@string/title_activity_side_panel"
             android:theme="@style/Theme.Transparent" >
             <intent-filter>
                 <category android:name="android.intent.category.LAUNCHER" />

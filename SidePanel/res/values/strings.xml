@@ -6,7 +6,7 @@
     <string name="title_activity_appinfo">About this app</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="dummy_button">Dummy Button</string>
-    <string name="title_activity_left_side_panel">LeftSidePanel</string>
+    <string name="title_activity_side_panel">!SidePanel!</string>
     <string name="title_activity_notices">Third-Party Notices</string>
     <string name="menu_settings" />
     <string name="pref_service_toggle">Enable Service</string>
@@ -40,5 +40,7 @@
     <string name="guide_close">Close Guide</string>
     <string name="guide_welcome_close">To Skip, Click &quot;Close Guide&quot;</string>
     <string name="title_activity_changelogs">Change Logs</string>
+    <string name="pref_panelpos_right">Use right side panel</string>
+    <string name="pref_panelpos_right_sub">Use right side panel instead of left side panel</string>
 
 </resources>
