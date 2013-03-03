@@ -31,6 +31,6 @@
     android:layout_height="50dp"
     android:layout_alignBottom="@+id/imageView1"
     android:layout_centerHorizontal="true"
-    android:layout_marginBottom="16dp" />
+    android:layout_marginBottom="13dp" />
 
     </RelativeLayout>
