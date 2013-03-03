@@ -19,10 +19,11 @@
         xmlns:android="http://schemas.android.com/apk/res/android">
     <CheckBoxPreference android:key="service_toggle" android:title="@string/pref_service_toggle" android:summary="@string/pref_service_toggle_sub" android:defaultValue="false"/>
     <CheckBoxPreference android:key="autostart_toggle" android:title="@string/pref_auto" android:summary="@string/pref_auto_sub" android:defaultValue="false" android:dependency="service_toggle"/>
-    <CheckBoxPreference android:key="panelpos_right" android:defaultValue="false" android:summary="@string/pref_panelpos_right_sub" android:title="@string/pref_panelpos_right"/>
+    <CheckBoxPreference android:key="noti_toggle" android:defaultValue="true" android:title="@string/pref_notification" android:summary="@string/pref_notification_desc"/><CheckBoxPreference android:key="panelpos_right" android:defaultValue="false" android:summary="@string/pref_panelpos_right_sub" android:title="@string/pref_panelpos_right"/>
     <ListPreference android:key="itembg_list" android:entryValues="@array/itembg_value" android:entries="@array/itembg_string" android:title="@string/pref_itembg" android:summary="@string/pref_itembg_sub" android:defaultValue="default"/><ListPreference android:key="panelbg_list" android:enabled="true" android:title="@string/pref_panelbg" android:summary="@string/pref_panelbg_sub" android:entryValues="@array/panelbg_value" android:entries="@array/panelbg_string" android:defaultValue="dark"/><Preference android:key="guide_intent" android:summary="@string/pref_guide_sub" android:title="@string/pref_guide"/>
     <Preference android:key="blog_intent" android:summary="@string/pref_blog_sub" android:title="@string/pref_blog"/>
     <Preference android:key="appinfo_intent" android:summary="@string/pref_appinfo_sub" android:title="@string/pref_appinfo"/>
+    
     
     
     

@@ -954,15 +954,16 @@ containing a value of this type.
         public static final int guide_3=0x7f020072;
         public static final int guide_4=0x7f020073;
         public static final int ic_launcher=0x7f020074;
-        public static final int itembg_dark=0x7f020075;
-        public static final int itembg_default=0x7f020076;
-        public static final int itembg_light=0x7f020077;
-        public static final int itembg_none=0x7f020078;
-        public static final int panel_item_bg=0x7f020079;
-        public static final int panel_item_bg_normal=0x7f02007a;
-        public static final int panel_item_bg_press=0x7f02007b;
-        public static final int panelbg=0x7f02007c;
-        public static final int panelbg_light=0x7f02007d;
+        public static final int ic_stat_sidepanel=0x7f020075;
+        public static final int itembg_dark=0x7f020076;
+        public static final int itembg_default=0x7f020077;
+        public static final int itembg_light=0x7f020078;
+        public static final int itembg_none=0x7f020079;
+        public static final int panel_item_bg=0x7f02007a;
+        public static final int panel_item_bg_normal=0x7f02007b;
+        public static final int panel_item_bg_press=0x7f02007c;
+        public static final int panelbg=0x7f02007d;
+        public static final int panelbg_light=0x7f02007e;
     }
     public static final class id {
         public static final int abs__action_bar=0x7f070022;
@@ -1194,6 +1195,8 @@ containing a value of this type.
         public static final int pref_guide_sub=0x7f0c0021;
         public static final int pref_itembg=0x7f0c0038;
         public static final int pref_itembg_sub=0x7f0c0039;
+        public static final int pref_notification=0x7f0c0041;
+        public static final int pref_notification_desc=0x7f0c0042;
         public static final int pref_panelbg=0x7f0c003a;
         public static final int pref_panelbg_sub=0x7f0c003b;
         public static final int pref_panelpos_right=0x7f0c0036;
@@ -1201,6 +1204,9 @@ containing a value of this type.
         public static final int pref_previously_started=0x7f0c0029;
         public static final int pref_service_toggle=0x7f0c0017;
         public static final int pref_service_toggle_sub=0x7f0c0018;
+        public static final int service_notification=0x7f0c0040;
+        public static final int service_running=0x7f0c003e;
+        public static final int service_running_desc=0x7f0c003f;
         public static final int title_activity_appinfo=0x7f0c0011;
         public static final int title_activity_changelogs=0x7f0c0035;
         public static final int title_activity_guide=0x7f0c002a;

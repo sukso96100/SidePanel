@@ -53,10 +53,11 @@ public class Settings extends SherlockPreferenceActivity implements OnPreference
         checkboxPref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {            
         public boolean onPreferenceChange(Preference preference, Object newValue) {
                boolean myValue = (Boolean) newValue;
-               if(myValue)
+               if(myValue){
                        startService(new Intent(Settings.this, TouchDetectService.class));
-               else
-                       stopService(new Intent(Settings.this, TouchDetectService.class));
+               finish();}
+               else{
+                       stopService(new Intent(Settings.this, TouchDetectService.class));}
               return true;
          }
      }); 

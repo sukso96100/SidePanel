@@ -58,5 +58,10 @@
     <string name="pref_panelbg_sub">패널 배경색상 바꾸기</string>
     <string name="guide_itembg">"항목 배경"옵션을 사용하여\n 항목 배경을 바꿉니다</string>
     <string name="guide_panelbg">"패널 배경색상"옵션을 사용하여\n 패널 배경색상을 바꿉니다</string>
+    <string name="service_running">SidePanel 서비스</string>
+    <string name="service_running_desc">앱을 설정하려면 클릭하세요</string>
+    <string name="service_notification">SidePanel 서비스가 실행중입니다.</string>
+    <string name="pref_notification">알림영역에 표시</string>
+    <string name="pref_notification_desc">서비스가 활성화되었을떄 알림영역에 표시하려면 체크하세요.</string>
     
 </resources>

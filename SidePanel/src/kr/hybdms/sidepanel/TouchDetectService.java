@@ -17,10 +17,14 @@
 
 package kr.hybdms.sidepanel;
 
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Context;
 import android.content.ContextWrapper;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.IBinder;
 import android.util.Log;
 import android.view.Gravity;
@@ -34,8 +38,14 @@ import android.graphics.PixelFormat;
 public class TouchDetectService extends Service {
 	private ImageView mTouchDetector;							
 	private WindowManager.LayoutParams mParams;		
-	private WindowManager mWindowManager;		
+	private WindowManager mWindowManager;	
 	
+	private static final int MY_NOTIFICATION_ID=1;
+	private NotificationManager notificationManager;
+	private Notification myNotification;
+	final static String ACTION = "NotifyServiceAction";
+	final static String STOP_SERVICE = "";
+	final static int RQS_STOP_SERVICE = 1;
 	
 
 	private OnTouchListener mViewTouchListener = new OnTouchListener() {
@@ -60,8 +70,11 @@ public class TouchDetectService extends Service {
     @Override
     public void onCreate() {
         super.onCreate();
-        
+
+
+               
         boolean rightpanel = getSharedPreferences(getPackageName() + "_preferences", Context.MODE_PRIVATE).getBoolean("panelpos_right", true);
+        boolean notificationison = getSharedPreferences(getPackageName() + "_preferences", Context.MODE_PRIVATE).getBoolean("noti_toggle", true);
         Log.i("BOOTSVC", "Service started at the BOOT_COMPLETED.");
 
         if(rightpanel)
@@ -98,9 +111,38 @@ public class TouchDetectService extends Service {
             mWindowManager = (WindowManager) getSystemService(WINDOW_SERVICE);  //윈도우 매니저
             mWindowManager.addView(mTouchDetector, mParams);      //윈도우에 뷰 넣기. permission 필요.   //윈도우에 뷰 넣기. permission 필요.
         }
-        }
-
         
+        
+        if(notificationison){
+     // Send Notification
+        notificationManager =
+         (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
+        myNotification = new Notification(R.drawable.ic_stat_sidepanel,
+        		getText(R.string.service_notification),
+          System.currentTimeMillis());
+        Context context = getApplicationContext();
+        CharSequence notificationTitle = getText(R.string.service_running);
+        CharSequence notificationText = getText(R.string.service_running_desc);
+        Intent myIntent = new Intent(getBaseContext(), Settings.class);;
+        PendingIntent pendingIntent
+          = PendingIntent.getActivity(getBaseContext(),
+            0, myIntent,
+            Intent.FLAG_ACTIVITY_NEW_TASK);
+        myNotification.defaults |= Notification.DEFAULT_SOUND;
+        myNotification.flags |= Notification.FLAG_AUTO_CANCEL;
+        myNotification.flags = Notification.FLAG_ONGOING_EVENT;
+        myNotification.setLatestEventInfo(context,
+           notificationTitle,
+           notificationText,
+           pendingIntent);
+        notificationManager.notify(MY_NOTIFICATION_ID, myNotification);
+        }
+        else
+        {
+        }
+        
+        
+        }
     
 
    
@@ -113,5 +155,6 @@ public class TouchDetectService extends Service {
             if(mTouchDetector != null) mWindowManager.removeView(mTouchDetector);
         }
         super.onDestroy();
+        notificationManager.cancel(MY_NOTIFICATION_ID);
     }
 }
