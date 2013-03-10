@@ -57,7 +57,8 @@ public class SidePanel extends Activity {
 	 private ArrayList<String> packageName = null;
 	 private ArrayList<String> className = null;
 	 
-	 protected void onCreate(Bundle savedInstanceState) {
+	 @Override
+	protected void onCreate(Bundle savedInstanceState) {
 	  super.onCreate(savedInstanceState);
 	  boolean rightpanel = getSharedPreferences(getPackageName() + "_preferences", Context.MODE_PRIVATE).getBoolean("panelpos_right", true);
 	  if(rightpanel){
@@ -119,7 +120,8 @@ public class SidePanel extends Activity {
 	  listView.setAdapter(adapter);
 	  }
 	  listView.setOnItemClickListener(new OnItemClickListener() {
-	   public void onItemClick(AdapterView<?> parent, View view, int postion, long id) {
+	   @Override
+	public void onItemClick(AdapterView<?> parent, View view, int postion, long id) {
 	   
 		   boolean rightpanel = getSharedPreferences(getPackageName() + "_preferences", Context.MODE_PRIVATE).getBoolean("panelpos_right", true);
 		   
@@ -148,7 +150,8 @@ public class SidePanel extends Activity {
 	  }
 	  
 	  imgbtn.setOnClickListener(new View.OnClickListener(){
-			 public void onClick(View v) {
+			 @Override
+			public void onClick(View v) {
 				 if(v.getId() ==R.id.transparentbackground){
 					 moveTaskToBack(true);
 						finish();

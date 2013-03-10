@@ -1,4 +1,8 @@
-0.7(beta) 3/3
+0.8(beta) - 3/10
+Added Vibrate Option
+Added Tocuh Detector resize and position option
+
+0.7(beta) - 3/3
 -Added Notification option
 -Edited panel item background images for devices that using xhdpi image resources
 

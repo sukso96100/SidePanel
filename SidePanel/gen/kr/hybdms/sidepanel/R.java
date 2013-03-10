@@ -21,6 +21,12 @@ public final class R {
         public static final int zoom_out=0x7f040009;
     }
     public static final class array {
+        public static final int detector_height_string=0x7f0e0007;
+        public static final int detector_height_value=0x7f0e0006;
+        public static final int detector_pos_string=0x7f0e0008;
+        public static final int detector_pos_value=0x7f0e0009;
+        public static final int detector_width_string=0x7f0e0005;
+        public static final int detector_width_value=0x7f0e0004;
         public static final int itembg_string=0x7f0e0001;
         public static final int itembg_value=0x7f0e0000;
         public static final int panelbg_string=0x7f0e0003;
@@ -1191,6 +1197,12 @@ containing a value of this type.
         public static final int pref_auto_sub=0x7f0c001f;
         public static final int pref_blog=0x7f0c0022;
         public static final int pref_blog_sub=0x7f0c0023;
+        public static final int pref_detector_height=0x7f0c0045;
+        public static final int pref_detector_height_desc=0x7f0c0046;
+        public static final int pref_detector_pos=0x7f0c0049;
+        public static final int pref_detector_pos_desc=0x7f0c004a;
+        public static final int pref_detector_width=0x7f0c0043;
+        public static final int pref_detector_width_desc=0x7f0c0044;
         public static final int pref_guide=0x7f0c0020;
         public static final int pref_guide_sub=0x7f0c0021;
         public static final int pref_itembg=0x7f0c0038;
@@ -1204,6 +1216,8 @@ containing a value of this type.
         public static final int pref_previously_started=0x7f0c0029;
         public static final int pref_service_toggle=0x7f0c0017;
         public static final int pref_service_toggle_sub=0x7f0c0018;
+        public static final int pref_vibrate=0x7f0c0047;
+        public static final int pref_vibrate_desc=0x7f0c0048;
         public static final int service_notification=0x7f0c0040;
         public static final int service_running=0x7f0c003e;
         public static final int service_running_desc=0x7f0c003f;

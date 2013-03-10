@@ -66,6 +66,7 @@
     <item>dark</item>
     <item>light</item>
     </string-array>
+    
     <string name="pref_itembg">Item background</string>
     <string name="pref_itembg_sub">Change panel item background</string>
     <string name="pref_panelbg">Panel background color</string>
@@ -77,5 +78,66 @@
     <string name="service_notification">SidePanel Service is running</string>
     <string name="pref_notification">Show Notification</string>
     <string name="pref_notification_desc">Chack to show notification. when Service is running</string>
+    <string name="pref_detector_width">Touch Detector Width</string>
+    <string name="pref_detector_width_desc">Change Touch Detector Width value</string>
+    <string name="pref_detector_height">Touch Detector height</string>
+    <string name="pref_detector_height_desc">Change Touch Detector height value</string>
     
+    <string-array name="detector_width_value">
+    <item>025</item>
+    <item>050</item>
+    <item>075</item>
+    <item>100</item>
+    <item>200</item>
+    <item>300</item>
+    <item>400</item>
+    </string-array>
+    
+    <string-array name="detector_width_string">
+    <item>default*0.25</item>
+    <item>default*0.5</item>
+    <item>default*0.75</item>
+    <item>default</item>
+    <item>default*2</item>
+    <item>default*3</item>
+    <item>default*4</item>
+    </string-array>
+    
+    <string-array name="detector_height_value">
+    <item>025</item>
+    <item>050</item>
+    <item>075</item>
+    <item>100</item>
+    <item>200</item>
+    <item>300</item>
+    <item>400</item>
+    </string-array>
+    
+    <string-array name="detector_height_string">
+    <item>default*0.25</item>
+    <item>default*0.5</item>
+    <item>default*0.75</item>
+    <item>default</item>
+    <item>default*2</item>
+    <item>default*3</item>
+    <item>default*4</item>
+    </string-array>
+    
+    <string name="pref_vibrate">Enaable Vibrate</string>
+    <string name="pref_vibrate_desc">vibrate when opening panel</string>
+    
+    <string-array name="detector_pos_string">
+    <item>Top</item>
+    <item>Center</item>
+    <item>Bottom</item>
+    </string-array>
+    
+    <string-array name="detector_pos_value">
+    <item>top</item>
+    <item>center</item>
+    <item>bottom</item>
+    </string-array>
+    
+    <string name="pref_detector_pos">Touch Detector Position</string>
+    <string name="pref_detector_pos_desc">Change Touch Detector Position</string>
 </resources>

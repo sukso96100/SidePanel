@@ -8,6 +8,12 @@ int anim right_slide_out 0x7f040006
 int anim right_slide_out_fast 0x7f040007
 int anim zoom_in 0x7f040008
 int anim zoom_out 0x7f040009
+int array detector_height_string 0x7f0e0007
+int array detector_height_value 0x7f0e0006
+int array detector_pos_string 0x7f0e0008
+int array detector_pos_value 0x7f0e0009
+int array detector_width_string 0x7f0e0005
+int array detector_width_value 0x7f0e0004
 int array itembg_string 0x7f0e0001
 int array itembg_value 0x7f0e0000
 int array panelbg_string 0x7f0e0003
@@ -447,6 +453,12 @@ int string pref_auto 0x7f0c001e
 int string pref_auto_sub 0x7f0c001f
 int string pref_blog 0x7f0c0022
 int string pref_blog_sub 0x7f0c0023
+int string pref_detector_height 0x7f0c0045
+int string pref_detector_height_desc 0x7f0c0046
+int string pref_detector_pos 0x7f0c0049
+int string pref_detector_pos_desc 0x7f0c004a
+int string pref_detector_width 0x7f0c0043
+int string pref_detector_width_desc 0x7f0c0044
 int string pref_guide 0x7f0c0020
 int string pref_guide_sub 0x7f0c0021
 int string pref_itembg 0x7f0c0038
@@ -460,6 +472,8 @@ int string pref_panelpos_right_sub 0x7f0c0037
 int string pref_previously_started 0x7f0c0029
 int string pref_service_toggle 0x7f0c0017
 int string pref_service_toggle_sub 0x7f0c0018
+int string pref_vibrate 0x7f0c0047
+int string pref_vibrate_desc 0x7f0c0048
 int string service_notification 0x7f0c0040
 int string service_running 0x7f0c003e
 int string service_running_desc 0x7f0c003f

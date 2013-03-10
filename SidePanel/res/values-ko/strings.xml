@@ -63,5 +63,41 @@
     <string name="service_notification">SidePanel 서비스가 실행중입니다.</string>
     <string name="pref_notification">알림영역에 표시</string>
     <string name="pref_notification_desc">서비스가 활성화되었을떄 알림영역에 표시하려면 체크하세요.</string>
+    <string name="pref_detector_width">터치 인식영역 굵기</string>
+    <string name="pref_detector_width_desc">터치 인식영역 굵기 변경하기</string>
+    <string name="pref_detector_height">터치 인식영역 높이</string>
+    <string name="pref_detector_height_desc">터치 인식영역 높이 변경하기</string>
     
+    
+    <string-array name="detector_width_string">
+    <item>기본값*0.25</item>
+    <item>기본값*0.5</item>
+    <item>기본값*0.75</item>
+    <item>기본값</item>
+    <item>기본값*2</item>
+    <item>기본값*3</item>
+    <item>기본값*4</item>
+    </string-array>
+    
+    <string-array name="detector_height_string">
+    <item>기본값*0.25</item>
+    <item>기본값*0.5</item>
+    <item>기본값*0.75</item>
+    <item>기본값</item>
+    <item>기본값*2</item>
+    <item>기본값*3</item>
+    <item>기본값*4</item>
+    </string-array>
+    
+    <string name="pref_vibrate">진동 활성화 하기</string>
+    <string name="pref_vibrate_desc">체크하면 패널을 열때 짧은 진동이 발생합니다</string>
+    
+        <string-array name="detector_pos_string">
+    <item>위쪽</item>
+    <item>가운데</item>
+    <item>아래쪽</item>
+    </string-array>
+    
+    <string name="pref_detector_pos">터치 인식영역 위치</string>
+    <string name="pref_detector_pos_desc">터치 인식영역 위치 변경하기</string>
 </resources>

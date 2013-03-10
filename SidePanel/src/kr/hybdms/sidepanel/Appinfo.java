@@ -17,21 +17,14 @@
 
 package kr.hybdms.sidepanel;
 
-import java.util.ArrayList;
-
 import com.actionbarsherlock.app.SherlockActivity;
 
 import android.net.Uri;
 import android.os.Bundle;
 import android.content.Intent;
-import android.content.res.Resources;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ListView;
 
 public class Appinfo extends SherlockActivity implements OnClickListener {
 	    @Override

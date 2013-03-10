@@ -57,7 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:text="V 0.7(beta)"
+        android:text="V 0.8(beta)"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <ImageView

@@ -18,16 +18,12 @@
 package kr.hybdms.sidepanel;
 
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.SharedPreferences.Editor;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.CheckBoxPreference;
 import android.preference.Preference;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.preference.Preference.OnPreferenceClickListener;
-import android.preference.PreferenceManager;
-
 import com.actionbarsherlock.app.SherlockPreferenceActivity;
 import kr.hybdms.sidepanel.R;
 
@@ -51,7 +47,8 @@ public class Settings extends SherlockPreferenceActivity implements OnPreference
         }
 
         checkboxPref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {            
-        public boolean onPreferenceChange(Preference preference, Object newValue) {
+        @Override
+		public boolean onPreferenceChange(Preference preference, Object newValue) {
                boolean myValue = (Boolean) newValue;
                if(myValue){
                        startService(new Intent(Settings.this, TouchDetectService.class));
@@ -62,9 +59,9 @@ public class Settings extends SherlockPreferenceActivity implements OnPreference
          }
      }); 
         
-        Preference pAppName = (Preference)findPreference("blog_intent");
-        Preference pAppVersion = (Preference)findPreference("appinfo_intent");
-        Preference guideintent = (Preference)findPreference("guide_intent");
+        Preference pAppName = findPreference("blog_intent");
+        Preference pAppVersion = findPreference("appinfo_intent");
+        Preference guideintent = findPreference("guide_intent");
          
         pAppName.setOnPreferenceClickListener(this);
         pAppVersion.setOnPreferenceClickListener(this);

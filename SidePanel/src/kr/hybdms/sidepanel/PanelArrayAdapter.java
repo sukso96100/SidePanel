@@ -19,17 +19,13 @@ package kr.hybdms.sidepanel;
 
 import java.util.List;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.content.pm.PackageManager;
-import android.content.pm.PackageManager.NameNotFoundException;
 
 public class PanelArrayAdapter extends ArrayAdapter<PanelItemDetail> {
     Context context;
@@ -45,11 +41,12 @@ public class PanelArrayAdapter extends ArrayAdapter<PanelItemDetail> {
     private class ViewHolder {
         ImageView imageView;
     }
-    public View getView(int position, View convertView, ViewGroup parent) {
+    @Override
+	public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder = null;
         PanelItemDetail rowItem = getItem(position);
         LayoutInflater mInflater = (LayoutInflater) context
-                .getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
+                .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         
         if (convertView == null) {
          SharedPreferences myPreference = context.getSharedPreferences("kr.hybdms.sidepanel_preferences", Context.MODE_PRIVATE);
