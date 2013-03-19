@@ -33,8 +33,8 @@
     <string name="action_settings"></string>
     <string name="pref_auto">Start on boot</string>
     <string name="pref_auto_sub">Check to start service on boot</string>
-    <string name="pref_guide">Using Guide</string>
-    <string name="pref_guide_sub">SidePanel Using Guide</string>
+    <string name="pref_guide">User's Guide</string>
+    <string name="pref_guide_sub">SidePanel User's Guide</string>
     <string name="pref_blog">Visit the blog</string>
     <string name="pref_blog_sub">hybdms.blogspot.com</string>
     <string name="pref_appinfo">About this app</string>
@@ -43,9 +43,9 @@
     <string name="info_feedback">Send feedback</string>
     <string name="info_thirdparty">Third-Party notices</string>
     <string name="pref_previously_started">firstrun</string>
-    <string name="title_activity_guide">App Using Guide</string>
+    <string name="title_activity_guide">App User's Guide</string>
     <string name="guide_welcome">WELCOME!</string>
-    <string name="guide_welcome_info">Know how to use SidePanel before use it</string>
+    <string name="guide_welcome_info">Know how to use SidePanel before using it</string>
     <string name="guide_welcome_continue">Slide right to left to continue</string>
     <string name="guide_2_1">Check &quot;Enable Service&quot; to enable service</string>
     <string name="guide_3_1">Swipe from edge to open panel</string>
@@ -92,7 +92,7 @@
     <string name="service_running_desc">Click to configure</string>
     <string name="service_notification">SidePanel Service is running</string>
     <string name="pref_notification">Show Notification</string>
-    <string name="pref_notification_desc">Check to show notification. when Service is running</string>
+    <string name="pref_notification_desc">Check to show notification when Service is running</string>
     <string name="pref_detector_width">Touch Detector Width</string>
     <string name="pref_detector_width_desc">Change Touch Detector Width value</string>
     <string name="pref_detector_height">Touch Detector height</string>
@@ -109,13 +109,13 @@
     </string-array>
     
     <string-array name="detector_width_string">
-    <item>default*0.25</item>
-    <item>default*0.5</item>
-    <item>default*0.75</item>
+    <item>0.25*default</item>
+    <item>0.5*default</item>
+    <item>0.75*default</item>
     <item>default</item>
-    <item>default*2</item>
-    <item>default*3</item>
-    <item>default*4</item>
+    <item>2*default</item>
+    <item>3*default</item>
+    <item>4*default</item>
     </string-array>
     
     <string-array name="detector_height_value">
@@ -129,13 +129,13 @@
     </string-array>
     
     <string-array name="detector_height_string">
-    <item>default*0.25</item>
-    <item>default*0.5</item>
-    <item>default*0.75</item>
+    <item>0.25*default</item>
+    <item>0.5*default</item>
+    <item>0.75*default</item>
     <item>default</item>
-    <item>default*2</item>
-    <item>default*3</item>
-    <item>default*4</item>
+    <item>2*default</item>
+    <item>3^default</item>
+    <item>4*default</item>
     </string-array>
     
     <string name="pref_vibrate">Enable Vibrate</string>
