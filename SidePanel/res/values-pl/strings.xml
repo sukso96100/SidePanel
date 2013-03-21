@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2013 Young Bin Han
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<!--
+Thanks to reaper61616(reaper61616@gmail.com) for providing polish translation
+-->
+<resources>
+
+    <string name="app_name">SidePanel</string>
+    <string name="button_appinfo">Informacje o aplikacji</string>
+    <string name="title_activity_appinfo">O aplikacji</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="title_activity_side_panel">!SidePanel!</string>
+    <string name="title_activity_notices">Powiadomienia innych aplikacji</string>
+    <string name="menu_settings" />
+    <string name="pref_service_toggle">Włącz usługę</string>
+    <string name="pref_service_toggle_sub">Zaznacz, by uruchomić usługę SidePanel</string>
+    <string name="title_activity_home">Dom</string>
+    <string name="hello_world">Witej świecie!</string>
+    <string name="label_settings">Ustawienia</string>
+    <string name="label_sum_settings">Zmień ustawienia SidePanel</string>
+    <string name="action_settings"></string>
+    <string name="pref_auto">Uruchom przy starcie</string>
+    <string name="pref_auto_sub">Zaznacz by uruchomić SidePanel przy starcie systemu</string>
+    <string name="pref_guide">Przewodnik</string>
+    <string name="pref_guide_sub">Instrukcja obsługi SidePanel</string>
+    <string name="pref_blog">Odwiedź bloga</string>
+    <string name="pref_blog_sub">hybdms.blogspot.com</string>
+    <string name="pref_appinfo">O tej aplikacji</string>
+    <string name="pref_appinfo_sub">Trochę informacji o SidePanel</string>
+    <string name="info_updatecheck">Sprawdź aktualizacje</string>
+    <string name="info_feedback">Wyślij spostrzeżenia</string>
+    <string name="info_thirdparty">Powiadomienia innych aplikacji</string>
+    <string name="pref_previously_started">piewsze uruchomienie</string>
+    <string name="title_activity_guide">Instrukcja obsługi aplikacji</string>
+    <string name="guide_welcome">WITAJ!</string>
+    <string name="guide_welcome_info">Dowiedź się jak używać SidePanel zanim go użyjesz</string>
+    <string name="guide_welcome_continue">Przesuń z prawej do lewej, aby kontynuować</string>
+    <string name="guide_2_1">Zaznacz Włącz usługę, aby włączyć usługę</string>
+    <string name="guide_3_1">Przesuń z krawędzi, aby otworzyć panel</string>
+    <string name="guide_3_2">Kliknij wpis, aby przenieść się do wybranej aplikacji</string>
+    <string name="guide_4_ready">Gotowy do użycia!</string>
+    <string name="guide_4_close">Kliknij Zamknij instrukcję, aby opuścić przewodnik</string>
+    <string name="guide_close">Zamknij instrukcję</string>
+    <string name="guide_welcome_close">Aby pominąć, kliknij Zamknij instrukcję</string>
+    <string name="title_activity_changelogs">Zmiany w aplikacji</string>
+    <string name="pref_panelpos_right">Użyj panelu po prawej stronie</string>
+    <string name="pref_panelpos_right_sub">Użyj panelu po prawej stronie zamiast po lewej</string>
+    
+    <string-array name="itembg_string">
+    <item>domyślnie</item>
+    <item>ciemne</item>
+    <item>jasno szary</item>
+    <item>brak</item>
+    </string-array>
+    
+    <string-array name="panelbg_string">
+    <item>ciemne</item>
+    <item>jasne</item>
+    </string-array>
+    
+    <string name="pref_itembg">Tło ikony</string>
+    <string name="pref_itembg_sub">Zmień tło ikony</string>
+    <string name="pref_panelbg">Tło panelu</string>
+    <string name="pref_panelbg_sub">Zmień tło panelu</string>
+    <string name="guide_itembg">Użyj Tło ikony, by zmienić tło ikony</string>
+    <string name="guide_panelbg">Użyj Tło panelu, by zmienić tło panelu</string>
+    <string name="service_running">Usługa SidePanel</string>
+    <string name="service_running_desc">Kliknij, by konfigurować</string>
+    <string name="service_notification">Usługa SidePanel jest uruchomiona</string>
+    <string name="pref_notification">Pokaż w powiadomieniach</string>
+    <string name="pref_notification_desc">Zaznacz, aby pokazać w powiadomieniach, kiedy usługa jest uruchomiona</string>
+    <string name="pref_detector_width">Długość detektora dotyku</string>
+    <string name="pref_detector_width_desc">Zmień długość detektora dotyku</string>
+    <string name="pref_detector_height">Wysokość detektora dotyku</string>
+    <string name="pref_detector_height_desc">Zmień wysokość detektora dotyku</string>
+    
+    <string-array name="detector_width_string">
+    <item>domyślnie*0.25</item>
+    <item>domyślnie*0.5</item>
+    <item>domyślnie*0.75</item>
+    <item>domyślnie</item>
+    <item>domyślnie*2</item>
+    <item>domyślnie*3</item>
+    <item>domyślnie*4</item>
+    </string-array>
+    
+    <string-array name="detector_height_string">
+    <item>domyślnie*0.25</item>
+    <item>domyślnie*0.5</item>
+    <item>domyślnie*0.75</item>
+    <item>domyślnie</item>
+    <item>domyślnie*2</item>
+    <item>domyślnie*3</item>
+    <item>domyślnie*4</item>
+    </string-array>
+    
+    <string name="pref_vibrate">Włącz wibracje</string>
+    <string name="pref_vibrate_desc">Wibruj, kiedy panel jest wysuwany</string>
+    
+    <string-array name="detector_pos_string">
+    <item>Góra</item>
+    <item>Środek</item>
+    <item>Dół</item>
+    </string-array>
+    
+    <string name="pref_detector_pos">Pozycja detektora dotyku</string>
+    <string name="pref_detector_pos_desc">Zmień pozycję detektora ruchu</string>
+</resources>
