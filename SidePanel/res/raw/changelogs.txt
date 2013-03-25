@@ -1,5 +1,6 @@
 0.8.1(beta) - 3/26
 Added Polish Support
+(Thanks to reaper61616(reaper61616@gmail.com) for providing polish translation)
 Updated Some translation
 
 0.8(beta) - 3/10
