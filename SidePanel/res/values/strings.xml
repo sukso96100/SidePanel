@@ -33,8 +33,8 @@
     <string name="action_settings"></string>
     <string name="pref_auto">Start on boot</string>
     <string name="pref_auto_sub">Check to start service on boot</string>
-    <string name="pref_guide">User's Guide</string>
-    <string name="pref_guide_sub">SidePanel User's Guide</string>
+    <string name="pref_guide">Tutorial</string>
+    <string name="pref_guide_sub">SidePanel Tutorial</string>
     <string name="pref_blog">Visit the blog</string>
     <string name="pref_blog_sub">hybdms.blogspot.com</string>
     <string name="pref_appinfo">About this app</string>
@@ -43,7 +43,7 @@
     <string name="info_feedback">Send feedback</string>
     <string name="info_thirdparty">Third-Party notices</string>
     <string name="pref_previously_started">firstrun</string>
-    <string name="title_activity_guide">App User's Guide</string>
+    <string name="title_activity_guide">Tutorial</string>
     <string name="guide_welcome">WELCOME!</string>
     <string name="guide_welcome_info">Know how to use SidePanel before using it</string>
     <string name="guide_welcome_continue">Slide right to left to continue</string>
@@ -51,9 +51,9 @@
     <string name="guide_3_1">Swipe from edge to open panel</string>
     <string name="guide_3_2">Click item to switch to other app</string>
     <string name="guide_4_ready">Ready to Use!</string>
-    <string name="guide_4_close">Click &quot;Close Guide&quot; to close guide</string>
-    <string name="guide_close">Close Guide</string>
-    <string name="guide_welcome_close">To Skip, Click &quot;Close Guide&quot;</string>
+    <string name="guide_4_close">Click &quot;Close Tutorial&quot; to close Tutorial</string>
+    <string name="guide_close">Close Tutorial</string>
+    <string name="guide_welcome_close">To Skip, Click &quot;Close Tutorial&quot;</string>
     <string name="title_activity_changelogs">Change Logs</string>
     <string name="pref_panelpos_right">Use right side panel</string>
     <string name="pref_panelpos_right_sub">Use right side panel instead of left side panel</string>

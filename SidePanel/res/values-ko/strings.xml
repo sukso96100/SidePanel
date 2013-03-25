@@ -39,7 +39,7 @@
     <string name="info_feedback">피드백 보내기</string>
     <string name="info_thirdparty">제3자 고지사항</string>
     <string name="pref_previously_started">firstrun</string>
-    <string name="title_activity_guide">이용 도움말</string>
+    <string name="title_activity_guide">튜토리얼</string>
     <string name="guide_welcome">환영합니다!</string>
     <string name="guide_welcome_info">SidePanel을 사용하기전 사용법을 알고가세요.</string>
     <string name="guide_welcome_continue">오른쪽에서 왼쪽으로 슬라이드 하여 계속합니다.</string>
@@ -47,9 +47,9 @@
     <string name="guide_3_1">패널을 꺼내려면, 가장자리에서 스와이프 하세요.</string>
     <string name="guide_3_2">항목을 클릭하여 앱을 전환합니다</string>
     <string name="guide_4_ready">사용할 준비가 되었습니다!</string>
-    <string name="guide_4_close">&quot;도움말 닫기&quot;를 눌러 도움말을 닫으세요.</string>
-    <string name="guide_close">도움말 닫기</string>
-    <string name="guide_welcome_close">건너뛰려면, &quot;도움말 닫기&quot;를 누르세요.</string>
+    <string name="guide_4_close">&quot;튜토리얼 닫기&quot;를 눌러 튜토리얼을 닫으세요.</string>
+    <string name="guide_close">튜토리얼 닫기</string>
+    <string name="guide_welcome_close">건너뛰려면, &quot;튜토리얼 닫기&quot;를 누르세요.</string>
     <string name="title_activity_changelogs">변경사항</string>
     <string name="pref_panelpos_right">오른쪽 패널 사용하기</string>
     <string name="pref_panelpos_right_sub">왼쪽 패널 대신 오른쪽 패널 사용하기</string>

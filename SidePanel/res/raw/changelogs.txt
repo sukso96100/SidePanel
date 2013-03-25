@@ -1,3 +1,7 @@
+0.8.1(beta) - 3/26
+Added Polish Support
+Updated Some translation
+
 0.8(beta) - 3/10
 Added Vibrate Option
 Added Tocuh Detector resize and position option
