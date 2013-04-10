@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">SidePanel</string>
+	<string name="button_appinfo">アプリの情報</string>
+	<string name="title_activity_appinfo">このアプリについて</string>
+	<string name="dummy_content">ダミーコメント</string>
+	<string name="dummy_button">ダミーボタン</string>
+	<string name="title_activity_side_panel">!SidePanel!</string>
+	<string name="title_activity_notices">サードパーティライセンス</string>
+	<string name="menu_settings">&lt;string name=\"pref_service_toggle\"&gt;サービスを有効にする</string>
+	<string name="pref_service_toggle_sub">サービスを有効にするにはチェックを入れてください</string>
+	<string name="title_activity_home">Home</string>
+	<string name="hello_world">Hello world!</string>
+	<string name="label_settings">設定</string>
+	<string name="label_sum_settings">SidePanelの設定を変更する</string>
+	<string name="pref_auto">起動時にサービスを開始する</string>
+	<string name="pref_auto_sub">自動でサービスを開始するにはチェックを入れてください</string>
+	<string name="pref_guide">チュートリアル</string>
+	<string name="pref_guide_sub">SidePanelのチュートリアル</string>
+	<string name="pref_blog">作者のサイトを開く</string>
+	<string name="pref_appinfo">このアプリについて</string>
+	<string name="pref_appinfo_sub">このアプリについての情報</string>
+	<string name="info_updatecheck">アップデートをチェックする</string>
+	<string name="info_feedback">フィードバックを送る</string>
+	<string name="info_thirdparty">サードパーティライセンス</string>
+	<string name="title_activity_guide">チュートリアル</string>
+	<string name="guide_welcome">ようこそ！</string>
+	<string name="guide_welcome_info">SidePanelを使う前に、使い方を説明します</string>
+	<string name="guide_welcome_continue">右から左にスワイプしてください</string>
+	<string name="guide_2_1">有効にするには「サービスを有効にする」にチェックを入れてください</string>
+	<string name="guide_3_1">パネルを開くには端からスワイプしてください</string>
+	<string name="guide_3_2">切り替えたい他のアプリを選択してください</string>
+	<string name="guide_4_ready">準備ができました！</string>
+	<string name="guide_4_close">「チュートリアルを閉じる」を押してチュートリアルを閉じます</string>
+	<string name="guide_close">チュートリアルを閉じる</string>
+	<string name="guide_welcome_close">スキップするには「チュートリアルを閉じる」を押してください</string>
+	<string name="title_activity_changelogs">変更点</string>
+	<string name="pref_panelpos_right">右側からパネルを開く</string>
+	<string name="pref_panelpos_right_sub">右側からパネルを開くようにします</string>
+	<string-array name="itembg_string">
+		<item>デフォルト</item>
+		<item>Dark</item>
+		<item>Light Gray</item>
+		<item>（なし）</item>
+	</string-array>
+	<string-array name="panelbg_string">
+		<item>Dark</item>
+		<item>Light</item>
+	</string-array>
+	<string name="pref_itembg">アイテム背景設定</string>
+	<string name="pref_itembg_sub">パネルのアイテムの背景を設定します</string>
+	<string name="pref_panelbg">パネル背景設定</string>
+	<string name="pref_panelbg_sub">パネルの背景を設定します</string>
+	<string name="guide_itembg">アイテムの背景を変更するときには「アイテム背景設定」を使ってください</string>
+	<string name="guide_panelbg">パネルの背景を変更するときには「パネル背景設定」を使ってください</string>
+	<string name="service_running">SidePanel Service</string>
+	<string name="service_running_desc">クリックして設定を開く</string>
+	<string name="service_notification">サービスは起動しています</string>
+	<string name="pref_notification">通知を表示する</string>
+	<string name="pref_notification_desc">サービス起動時に通知を表示するにはチェックしてください</string>
+	<string name="pref_detector_width">タッチを検知する幅</string>
+	<string name="pref_detector_width_desc">タッチを検知する幅を変更します</string>
+	<string name="pref_detector_height">タッチを検知する高さ</string>
+	<string name="pref_detector_height_desc">タッチを検知する高さを変更します</string>
+	<string-array name="detector_width_string">
+		<item>0.25倍</item>
+		<item>0.5倍</item>
+		<item>0.75倍</item>
+		<item>デフォルト</item>
+		<item>2倍</item>
+		<item>3倍</item>
+		<item>4倍</item>
+	</string-array>
+	<string-array name="detector_height_string">
+		<item>0.25倍</item>
+		<item>0.5倍</item>
+		<item>0.75倍</item>
+		<item>デフォルト</item>
+		<item>2倍</item>
+		<item>3倍</item>
+		<item>4倍</item>
+	</string-array>
+	<string name="pref_vibrate">バイブレーションを有効にする</string>
+	<string name="pref_vibrate_desc">パネルを開いた時に振動するようにします</string>
+	<string-array name="detector_pos_string">
+		<item>上部</item>
+		<item>中央</item>
+		<item>下部</item>
+	</string-array>
+	<string name="pref_detector_pos">タッチを検出する位置</string>
+	<string name="pref_detector_pos_desc">タッチを検知する位置を変更します</string>
+</resources>
