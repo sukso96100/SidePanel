@@ -17,7 +17,7 @@
 <!-- This is a primitive example showing the different types of preferences available. -->
 <PreferenceScreen
         xmlns:android="http://schemas.android.com/apk/res/android">
-    <ListPreference android:key="panelcontents_list" android:title="@string/pref_panelcontents_list" android:summary="@string/pref_panelcontents_list_sub" android:defaultValue="recent" android:entries="@array/panelcontents_string" android:entryValues="@array/panelcontents_value" /><CheckBoxPreference android:key="panelpos_right" android:defaultValue="false" android:summary="@string/pref_panelpos_right_sub" android:title="@string/pref_panelpos_right"/>
+    <ListPreference android:key="panelcontents_list" android:title="@string/pref_panelcontents_list" android:summary="@string/pref_panelcontents_list_sub" android:defaultValue="running" android:entries="@array/panelcontents_string" android:entryValues="@array/panelcontents_value" /><CheckBoxPreference android:key="panelpos_right" android:defaultValue="false" android:summary="@string/pref_panelpos_right_sub" android:title="@string/pref_panelpos_right"/>
     <ListPreference android:key="itembg_list" android:entryValues="@array/itembg_value" android:entries="@array/itembg_string" android:title="@string/pref_itembg" android:summary="@string/pref_itembg_sub" android:defaultValue="defaults"/>
     <ListPreference android:key="panelbg_list" android:enabled="true" android:title="@string/pref_panelbg" android:summary="@string/pref_panelbg_sub" android:entryValues="@array/panelbg_value" android:entries="@array/panelbg_string" android:defaultValue="dark"/>
     
