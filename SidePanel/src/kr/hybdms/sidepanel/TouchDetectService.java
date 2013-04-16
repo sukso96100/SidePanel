@@ -57,11 +57,27 @@ public class TouchDetectService extends Service {
 	            	Vibrator vibe = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 	            	vibe.vibrate(10);} //약0.01초 진동
 	            	else{}
+	            	String pcontent = getSharedPreferences(getPackageName() + "_preferences", Context.MODE_PRIVATE).getString("panelcontents_list", "");
+	           
+	          
+	          	  
+	          	  if(pcontent.equals("running"))
+	          	  {
+	          		//패널열기
+		            	Intent lsp = new Intent(getBaseContext(), SidePanel_RunningApps.class);
+		            	lsp.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+		            	getApplication().startActivity(lsp);
+		          
+	          	  }
+	          	  else{
+	          		//패널열기
+		            	Intent lsp = new Intent(getBaseContext(), SidePanel_RecentApps.class);
+		            	lsp.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+		            	getApplication().startActivity(lsp);
+		       
+	          	  }
 	            	//패널열기
-	            	Intent lsp = new Intent(getBaseContext(), SidePanel.class);
-	            	lsp.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-	            	getApplication().startActivity(lsp);
-	                break;
+	            
 	        }
 	        return true;
 	    }

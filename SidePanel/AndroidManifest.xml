@@ -30,10 +30,10 @@
         <activity
             android:name="kr.hybdms.sidepanel.Appinfo"
             android:label="@string/title_activity_appinfo"
-            android:parentActivityName="kr.hybdms.sidepanel.SettingsActivity" >
+            android:parentActivityName="kr.hybdms.sidepanel.Settings" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="kr.hybdms.sidepanel.SettingsActivity" />
+                android:value="kr.hybdms.sidepanel.Settings" />
         </activity>
 
         <service android:name="kr.hybdms.sidepanel.TouchDetectService" >
@@ -45,7 +45,16 @@
         </service>
 
         <activity
-            android:name="kr.hybdms.sidepanel.SidePanel"
+            android:name="kr.hybdms.sidepanel.SidePanel_RunningApps"
+            android:label="@string/title_activity_side_panel"
+            android:theme="@style/Theme.Transparent" >
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="kr.hybdms.sidepanel.SidePanel_RecentApps"
             android:label="@string/title_activity_side_panel"
             android:theme="@style/Theme.Transparent" >
             <intent-filter>
@@ -83,6 +92,24 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="kr.hybdms.sidepanel.Appinfo" />
         </activity>
+                <activity
+            android:name="kr.hybdms.sidepanel.Settings_Panel"
+            android:label="@string/pref_group_panel"
+            android:parentActivityName="kr.hybdms.sidepanel.Settings" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kr.hybdms.sidepanel.Settings" />
+        </activity>
+        
+                <activity
+            android:name="kr.hybdms.sidepanel.Settings_Trigger"
+            android:label="@string/pref_group_trigger"
+            android:parentActivityName="kr.hybdms.sidepanel.Settings" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kr.hybdms.sidepanel.Settings" />
+        </activity>
+                
     </application>
 
 </manifest>

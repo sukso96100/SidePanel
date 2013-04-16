@@ -155,4 +155,21 @@
     
     <string name="pref_detector_pos">Touch Detector Position</string>
     <string name="pref_detector_pos_desc">Change Touch Detector Position</string>
+    <string name="pref_group_panel">Panel Settings</string>
+    <string name="pref_group_trigger">Touch Trigger Settings</string>
+    <string name="pref_panelcontents_list">Things to show on panel</string>
+    <string name="pref_panelcontents_list_sub">Select the things to show on panel</string>
+    
+        <string-array name="panelcontents_string">
+    <item>Recent Apps</item>
+    <item>Running Apps</item>
+    </string-array>
+    
+    <string-array name="panelcontents_value">
+    <item>recent</item>
+    <item>running</item>
+    </string-array>
+    
+    <string name="pref_appversion">App Version</string>
+    <string name="pref_appversion_sub">0.8.3(beta)</string>
 </resources>

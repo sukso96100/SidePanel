@@ -113,4 +113,15 @@
     
     <string name="pref_detector_pos">터치 인식영역 위치</string>
     <string name="pref_detector_pos_desc">터치 인식영역 위치 변경하기</string>
+        <string name="pref_group_panel">패널 설정</string>
+    <string name="pref_group_trigger">터치 트리거 설정</string>
+    <string name="pref_panelcontents_list">패널에 보일 것</string>
+    <string name="pref_panelcontents_list_sub">패널에 보일 것을 선택하세요</string>
+    
+        <string-array name="panelcontents_string">
+    <item>최근 앱</item>
+    <item>실행중인 앱</item>
+    </string-array>
+
+    <string name="pref_appversion">앱 버전</string>
 </resources>

@@ -31,6 +31,8 @@ public final class R {
         public static final int itembg_value=0x7f0e0000;
         public static final int panelbg_string=0x7f0e0003;
         public static final int panelbg_value=0x7f0e0002;
+        public static final int panelcontents_string=0x7f0e000a;
+        public static final int panelcontents_value=0x7f0e000b;
     }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
@@ -1208,6 +1210,8 @@ containing a value of this type.
         public static final int menu_settings=0x7f0c0016;
         public static final int pref_appinfo=0x7f0c0024;
         public static final int pref_appinfo_sub=0x7f0c0025;
+        public static final int pref_appversion=0x7f0c004f;
+        public static final int pref_appversion_sub=0x7f0c0050;
         public static final int pref_auto=0x7f0c001e;
         public static final int pref_auto_sub=0x7f0c001f;
         public static final int pref_blog=0x7f0c0022;
@@ -1218,6 +1222,8 @@ containing a value of this type.
         public static final int pref_detector_pos_desc=0x7f0c004a;
         public static final int pref_detector_width=0x7f0c0043;
         public static final int pref_detector_width_desc=0x7f0c0044;
+        public static final int pref_group_panel=0x7f0c004b;
+        public static final int pref_group_trigger=0x7f0c004c;
         public static final int pref_guide=0x7f0c0020;
         public static final int pref_guide_sub=0x7f0c0021;
         public static final int pref_itembg=0x7f0c0038;
@@ -1226,6 +1232,8 @@ containing a value of this type.
         public static final int pref_notification_desc=0x7f0c0042;
         public static final int pref_panelbg=0x7f0c003a;
         public static final int pref_panelbg_sub=0x7f0c003b;
+        public static final int pref_panelcontents_list=0x7f0c004d;
+        public static final int pref_panelcontents_list_sub=0x7f0c004e;
         public static final int pref_panelpos_right=0x7f0c0036;
         public static final int pref_panelpos_right_sub=0x7f0c0037;
         public static final int pref_previously_started=0x7f0c0029;
@@ -1368,6 +1376,9 @@ containing a value of this type.
     }
     public static final class xml {
         public static final int settings=0x7f050000;
+        public static final int settings_appinfo=0x7f050001;
+        public static final int settings_panel=0x7f050002;
+        public static final int settings_trigger=0x7f050003;
     }
     public static final class styleable {
         /** 

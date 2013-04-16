@@ -1,6 +1,6 @@
 /*
  * SidePanel Application For Android
- * Copyright 2013 Young Bin Han
+ * Copyright (C) 2013 Young Bin Han
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -30,6 +30,8 @@ import kr.hybdms.sidepanel.util.SystemUiHider;
 
 import android.app.Activity;
 import android.app.ActivityManager;
+import android.app.ActivityManager.RunningTaskInfo;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -44,6 +46,9 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ImageView;
 import android.widget.ListView;
+import android.widget.Toast;
+
+import android.content.ComponentName;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -51,7 +56,7 @@ import android.widget.ListView;
  * 
  * @see SystemUiHider
  */
-public class SidePanel extends Activity {
+public class SidePanel_RecentApps extends Activity {
 	 private ArrayList<PanelItemDetail> rowItems = null;
 	 private ListView listView;
 	 private ArrayList<String> packageName = null;
@@ -78,19 +83,19 @@ public class SidePanel extends Activity {
 	  
 	  
 	  ActivityManager am = (ActivityManager) this.getSystemService(ACTIVITY_SERVICE);
-	  List<ActivityManager.RunningTaskInfo> tasks = am.getRunningTasks(30);
+	  List<ActivityManager.RecentTaskInfo> tasks = am.getRecentTasks(30, 0);
 	  rowItems = new ArrayList<PanelItemDetail>();
 	  PackageManager pacMgr = getPackageManager();
 	  
 	  
-	  for (ActivityManager.RunningTaskInfo runningTask : tasks) {
+	  for (ActivityManager.RecentTaskInfo recentTask : tasks) {
 	   try {
-	    rowItems.add(new PanelItemDetail(pacMgr.getApplicationIcon(runningTask.topActivity.getPackageName())));
-	    packageName.add(runningTask.topActivity.getPackageName());
-	    className.add(runningTask.topActivity.getClassName());
+	    rowItems.add(new PanelItemDetail(pacMgr.getApplicationIcon(recentTask.origActivity.getPackageName())));
+	    packageName.add(recentTask.origActivity.getPackageName());
+	    className.add(recentTask.origActivity.getClassName());
 	    
-	    Log.d("#@#", "getPackageName = " + runningTask.topActivity.getPackageName());
-	    Log.d("#@#", "getClassName = " + runningTask.topActivity.getClassName());
+	    Log.d("#@#", "getPackageName = " + recentTask.origActivity.getPackageName());
+	    Log.d("#@#", "getClassName = " + recentTask.origActivity.getClassName());
 	   } catch (NameNotFoundException e) {
 	    e.printStackTrace();
 	   }
@@ -122,11 +127,13 @@ public class SidePanel extends Activity {
 	  listView.setOnItemClickListener(new OnItemClickListener() {
 	   @Override
 	public void onItemClick(AdapterView<?> parent, View view, int postion, long id) {
-	   
+	   try{
 		   boolean rightpanel = getSharedPreferences(getPackageName() + "_preferences", Context.MODE_PRIVATE).getBoolean("panelpos_right", true);
 		   
 		   Intent taskintent = getPackageManager().getLaunchIntentForPackage(packageName.get(postion).toString());
 	       startActivity(taskintent);
+	   
+	      
 	       if(rightpanel){
 	       overridePendingTransition(R.anim.right_slide_in, R.anim.zoom_out);
 	       }
@@ -135,6 +142,12 @@ public class SidePanel extends Activity {
 	    	   overridePendingTransition(R.anim.left_slide_in, R.anim.zoom_out);
 	       }
 	       finish();
+	   }
+	   
+	   catch (NullPointerException fail) {
+		   Toast.makeText(getApplicationContext(), "!", Toast.LENGTH_SHORT).show();
+   	}
+      
 	   } 
 	  });
 	  SharedPreferences panelbgpref = PreferenceManager.getDefaultSharedPreferences(this);

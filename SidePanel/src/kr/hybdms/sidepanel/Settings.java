@@ -59,36 +59,37 @@ public class Settings extends SherlockPreferenceActivity implements OnPreference
          }
      }); 
         
-        Preference pAppName = findPreference("blog_intent");
         Preference pAppVersion = findPreference("appinfo_intent");
-        Preference guideintent = findPreference("guide_intent");
+        Preference panelgroup = findPreference("panel_intent");
+        Preference triggergroup = findPreference("trigger_intent");
          
-        pAppName.setOnPreferenceClickListener(this);
         pAppVersion.setOnPreferenceClickListener(this);
-        guideintent.setOnPreferenceClickListener(this);
+        panelgroup.setOnPreferenceClickListener(this);
+        triggergroup.setOnPreferenceClickListener(this);
     }
  
     @Override
     public boolean onPreferenceClick(Preference preference)
     {
         
-        if(preference.getKey().equals("blog_intent"))
-        {
-        	Intent blog = new Intent(Intent.ACTION_VIEW);
-		  	blog.setData(Uri.parse("http://hybdms.blogspot.kr"));
-		  	startActivity(blog);
-        }
+
         
-        else if(preference.getKey().equals("appinfo_intent"))
+      if(preference.getKey().equals("appinfo_intent"))
         {
         	Intent appinfo = new Intent(Settings.this, Appinfo.class); 
 	    	 startActivity(appinfo);
         }
-        else if(preference.getKey().equals("guide_intent"))
-        {
-        	Intent appinfo = new Intent(Settings.this, Guide.class); 
-	    	 startActivity(appinfo);
-        }
+      else if(preference.getKey().equals("panel_intent"))
+      {
+      	Intent panelgroup = new Intent(Settings.this, Settings_Panel.class); 
+	    	 startActivity(panelgroup);
+      }
+      else if(preference.getKey().equals("trigger_intent"))
+      {
+      	Intent triggergroup = new Intent(Settings.this, Settings_Trigger.class); 
+	    	 startActivity(triggergroup);
+      }
+
         return false;
     }
 
