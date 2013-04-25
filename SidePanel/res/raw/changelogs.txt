@@ -1,3 +1,8 @@
+0.8.3(beta) - 4/17
+Organized App Settings Screen
+Added Option to change thing to show on panel
+9recent app not works yet)
+
 0.8.2(beta) - 4/10
 Added Japanese Support
 (Updated from oneskyapp(http://hanyoungbin.oneskyapp.com))
